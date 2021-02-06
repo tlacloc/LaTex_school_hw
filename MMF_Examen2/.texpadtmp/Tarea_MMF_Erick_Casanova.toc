@@ -7,5 +7,5 @@
 \contentsline {part}{III\hspace {1em}Tarea 1 Ecuaciones diferenciales parciles}{12}% 
 \contentsline {section}{\numberline {0.3}Primer ejercicio}{13}% 
 \contentsline {section}{\numberline {0.4}Segundo ejercicio}{14}% 
-\contentsline {part}{IV\hspace {1em}Tarea 1}{15}% 
-\contentsline {section}{\numberline {0.5}Ecuaciones diferenciales parciales}{16}% 
+\contentsline {part}{IV\hspace {1em}Tarea 2}{16}% 
+\contentsline {section}{\numberline {0.5}Primer ejercicio}{17}% 

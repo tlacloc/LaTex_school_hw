@@ -502,12 +502,52 @@ When a piano string of lenght L is stuck by the piano hammer near the point $x=\
 	\end{cases}
 \end{equation*}
 
+Asumimos que no hay un desplazamiento inicial y que el movimiento está dado por:
+
+\begin{equation*}
+	\mu(x,t)=\frac{4v_oD}{\pi^2 c}\sum^\infty_{n=1} \frac{1}{n}\frac{\sin(\frac{n\pi\varepsilon}{L})\cos(\frac{n\pi\varepsilon}{2L})}{1-\frac{n^2d^2}{L^2}}\sin(\frac{n\pi x}{L})\cos(\frac{n\pi ct}{L})
+\end{equation*}
+
+La solución general de la ecuación diferencial se puede expresar como:
+\begin{equation*}
+	\mu(x,t)=\sum^\infty_{n=1}\lbrace An\cos(\frac{n\pi ct}{L}) + Bn\sin(\frac{n\pi ct}{L})\rbrace\sin(\frac{n\pi x}{L})
+\end{equation*}
+
+Para las condiciones iniciales de $\mu(x,0) = 0$ podemos ver que:
+\begin{align*}
+	\mu(x,0) = An\sin(\frac{n\pi x}{L})
+\end{align*}
+
+Lo cual es igual a cero, lo que nos dice que $An = 0$, por lo tanto la solución queda expresada solo en términos de $Bn$, entonces expandiendo a $v_o$ en la serie senos de Fourier obtenemos:
+
+\begin{align*}
+	Bn = \frac{L}{cn\pi}\frac{2}{L}\int^L_0 v_o(x)\sin(\frac{n\pi x}{L})\dd{x}
+\end{align*}
+
+\begin{align*}
+	Bn = \frac{2}{cn\pi}\int^{\varepsilon}_{	\varepsilon} v_o(x)\cos(\frac{\pi (x-\varepsilon)}{d})\sin(\frac{n\pi x}{L})\dd{x}
+\end{align*}
+
+Al resolver la integral podemos ver que:
+
+\begin{align*}
+	Bn = \frac{4v_od}{c\pi^2n}\frac{\sin(\frac{n\pi\varepsilon}{L})\cos(\frac{n\pi d}{2L})}{1-\frac{d^2n^2}{L^2}}
+\end{align*}
+
+Regresando a la función inicial vemos que:
+
+\begin{equation*}
+	\mu(x,t)=\sum^\infty_{n=1}\lbrace \frac{4v_od}{c\pi^2n}\frac{\sin(\frac{n\pi\varepsilon}{L})\cos(\frac{n\pi d}{2L})}{1-\frac{d^2n^2}{L^2}} \sin(\frac{n\pi ct}{L})\rbrace\sin(\frac{n\pi x}{L})
+\end{equation*}
+
 %-------------------------------------------------
 %Cuarto ejercicio
 %-------------------------------------------------
-\part{Tarea 1}
-\section{Ecuaciones diferenciales parciales}
+\part{Tarea 2}
+\section{Primer ejercicio}
+Demostrar que $\mathcal{L}$
 
+\section{Segundo ejercicio}
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
