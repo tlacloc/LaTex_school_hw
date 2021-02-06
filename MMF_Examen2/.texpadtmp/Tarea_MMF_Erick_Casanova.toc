@@ -9,3 +9,4 @@
 \contentsline {section}{\numberline {0.4}Segundo ejercicio}{14}% 
 \contentsline {part}{IV\hspace {1em}Tarea 2}{16}% 
 \contentsline {section}{\numberline {0.5}Primer ejercicio}{17}% 
+\contentsline {section}{\numberline {0.6}Segundo ejercicio}{17}% 
