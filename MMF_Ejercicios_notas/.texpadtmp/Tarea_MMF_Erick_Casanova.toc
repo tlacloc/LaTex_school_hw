@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\contentsline {part}{I\hspace {1em}Ejemplo 1}{2}% 
+\contentsline {section}{\numberline {0.1}Definici\IeC {\'o}n del libro}{3}% 
+\contentsline {part}{II\hspace {1em}Ejemplo 1}{7}% 
+\contentsline {section}{\numberline {0.2}Definici\IeC {\'o}n vista en clase}{8}% 
+\contentsline {part}{III\hspace {1em}Tarea 1 Ecuaciones diferenciales parciles}{12}% 
+\contentsline {section}{\numberline {0.3}Primer ejercicio}{13}% 
+\contentsline {section}{\numberline {0.4}Segundo ejercicio}{14}% 
+\contentsline {part}{IV\hspace {1em}Tarea 2}{16}% 
+\contentsline {section}{\numberline {0.5}Primer ejercicio}{17}% 
+\contentsline {section}{\numberline {0.6}Segundo ejercicio}{17}% 
