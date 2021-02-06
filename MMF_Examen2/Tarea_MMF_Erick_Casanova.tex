@@ -1,0 +1,333 @@
+%-------------------------------------------------
+%	Version: 0.0
+%	fecha de entrega 5 febrero 2021
+%
+%-------------------------------------------------
+
+\documentclass[11pt]{report}
+
+%packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-nodecimaldot]{babel}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage[thinc]{esdiff} %derivadas faciles
+\usepackage{physics} %algunos simbolos de derivadas
+
+%path donde se encuentran las imagenes
+\graphicspath{ {./figuras/} }
+
+%---------------------------------------------------------------
+%ABREVIACIONES DE COMANDOS
+%---------------------------------------------------------------
+
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[chapter] % reset theorem numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definición} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Ejemplo} % same for example numbers
+
+\newcommand{\chaptercontent}{
+\section{Basics}
+\begin{defn}Here is a new definition.\end{defn}
+\begin{thm}Here is a new theorem.\end{thm}
+\begin{thm}Here is a new theorem.\end{thm}
+\begin{exmp}Here is a good example.\end{exmp}
+\subsection{Some tips}
+\begin{defn}Here is a new definition.\end{defn}
+\section{Advanced stuff}
+\begin{defn}Here is a new definition.\end{defn}
+\subsection{Warnings}
+\begin{defn}Here is a new definition.\end{defn}
+}
+
+\usepackage{biblatex}
+%\addbibresource{Tarea1.bib}
+
+\begin{document}
+
+\begin{titlepage}
+\title{Titulo_del_trabajo}
+
+%-------------------------------------------------
+%PORTADA
+%-------------------------------------------------
+
+	\centering
+	{\scshape\LARGE Universidad Autónoma de Yucatán  \\ Facultad de ingeniería\par}
+	\vspace{1cm}
+	{\scshape\Large Métodos matemáticos de la física\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Segundo parcial\par}
+	\vspace{0.7cm}
+	{\begin{figure}[!h]
+	\centering
+    \includegraphics[scale=0.3]{UADY.png}
+	\end{figure}}
+	\vspace{0.7cm}
+	{\Large\itshape Erick Al. Casanova Cortés\par}
+	{\Large\itshape Matricula: 15014866\par}
+	\vfill
+	{\scshape\Large Docente\par
+	Dr. Miguel Zambrano\par}
+	\vfill
+	{\Large{\bfseries Fecha de entrega: 5 Febrero 2021} }
+
+	\vfill
+	
+\end{titlepage}
+
+%-------------------------------------------------
+%Inicio del documento
+%-------------------------------------------------
+
+\tableofcontents
+
+%-------------------------------------------------
+%Primer Ejercicio
+%-------------------------------------------------
+\part{Ejemplo 1}
+\section{Definición del libro}
+
+Desarrollar el ejemplo 2 de las notas de las transformadas de Fourier.\\
+Ejemplo: Considera el oscilador armónico armortiguado que actúa en una fuerza externa $g(t)$. El movimiento del oscilador está situado por la ecuación:\\
+\begin{equation*}
+	\ddot{x}(t) + 2\alpha \dot x (t) + \omega^2_o x(t) = f(t)
+\end{equation*}
+
+donde $f(t) = \frac{1}{m} g(t)$\\
+
+Por definición, podemos extender este resultado a:
+
+\begin{align*}
+	f(t) &= \int_{-\infty}^\infty \hat F(\omega) e^{i\omega t}\dd{\omega}\\
+	f(t) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \hat F(\omega) e^{-i\omega t} \dd{\omega}
+\end{align*}
+
+donde:
+
+\begin{align*}
+	\hat F(\omega)&=\frac{1}{2\pi}\int_{-\infty}^\infty f(t)e^{-i\omega t}\dd{t}\\
+	\hat F(\omega) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty f(t)e^{i\omega t}\dd{t}
+\end{align*}
+
+Respectivamente\\
+
+Esto conlleva a que la solución de $x$ también tendrá una transformada de Fourier que se denotará como $\hat A$, por lo que:
+
+\begin{align*}
+	x(t) &= \int_{-\infty}^\infty \hat A(\omega) e^{i\omega t}\dd{t}\\
+	x(t) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \hat A(\omega) e^{-i\omega t}\dd{t}
+\end{align*}
+
+Resulta evidente ver a $\hat A$ como la transformada de la ecuación diferencial, por lo que usando las propiedades de las derivadas de las transformadas obtenemos:
+
+\begin{align*}
+	\mathcal{F}\lbrace \dot{x} \rbrace &= -i\omega \mathcal{F}\lbrace x \rbrace\\
+	\mathcal{F}\lbrace \ddot{x} \rbrace &= -\omega^2 \mathcal{F}\lbrace x \rbrace
+\end{align*}
+
+Con estas ecuaciones asumimos que $x(\pm \infty) = \dot x (\pm \infty) = 0$.\\
+Por definición tenemos que:
+
+\begin{align*}
+	\int_{-\infty}^\infty \diff{}{t} x(t) e^{i\omega t} \dd{t}= -\int_{-\infty}^\infty x(t) \diff{}{t} e^{i\omega t} \dd{t}\\
+\end{align*}
+
+Por lo consiguiente, la transformada de la ecuación diferencial es:
+\begin{equation*}
+	-\omega^2 A(\omega) -2\alpha\omega iA(\omega)+\omega^2_oA(\omega) = F(\omega)
+\end{equation*}
+
+Despejando entonces $A(\omega)$
+
+\begin{equation*}
+	A(\omega) = \frac{F(\omega)}{(\omega^2_o -\omega)-2i\alpha\omega}
+\end{equation*}
+
+La solución al problema entonces es:
+
+\begin{equation*}
+	x(t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \frac{F(\omega)e^{-i\omega t}}{\omega^2_o -\omega)-2i\alpha\omega}
+\end{equation*}
+
+Igualando el denominador a cero podemos ver que:
+
+\begin{equation*}
+	\omega^2_o -\omega)-2i\alpha\omega = \zeta (\omega)
+\end{equation*}
+
+\begin{align*}
+	-\omega^2 -2i\alpha\omega + \omega^2_o &=0\\
+	\omega &= \frac{2i\alpha \pm\sqrt{4\omega^2_o - 4\alpha^2}}{-2}\\
+	\omega &= -i\alpha \pm \sqrt{-(\alpha^2-\omega^2_o)}
+\end{align*}
+
+Para los valores de $\alpha > 0$ los polos están arriba y se localizan en:
+
+\begin{align*}
+	\omega_{1, 2} &= \pm \sqrt{\omega^2_o -\alpha^2} -i\alpha & \text{Si $\omega_o>\alpha$}\\
+	\omega_{1, 2} &= \pm i\sqrt{\alpha^2-\omega^2_o}-i\alpha & \text{Si $\omega_o<\alpha$}\\
+	\omega_{1} &=\omega_{2} = -i\alpha & \text{Si $\omega_o=\alpha$}
+\end{align*}
+
+Ahora analizaremos los casos:\\
+Pimer caso: Dos polos simples\\
+Así tenemos que $\zeta(\omega) = -(\omega-\omega_1)(\omega-\omega_2)$, por lo que al evaluar los residuos obtenemos en $\omega = \omega_1$:
+
+\begin{equation*}
+	\frac{1}{\sqrt{2\pi}}\frac{F(\omega_1)e^{-i\omega_1t}}{\omega_1 - \omega_2}
+\end{equation*}
+
+Y cuando tenemos el caso de $\omega = \omega_2$:
+
+\begin{equation*}
+	-\frac{1}{\sqrt{2\pi}}\frac{F(\omega_2)e^{-i\omega_2t}}{\omega_1 - \omega_2}
+\end{equation*}
+
+Donde $\omega_1-\omega_2 = 2\sqrt{\omega^2_0 -\alpha^2}=2p$\\
+
+Como ejemplo particular, asumir que $f(t)$ tiene la forma
+
+\begin{equation*}
+	f(t)=
+	\begin{cases}
+		fo & |t|<\tau\\
+		0 & |t|\geq\tau
+	\end{cases}
+\end{equation*}
+
+La transformada de Fourier de $f(t)$:
+\begin{align*}
+	F(\omega)&=\frac{f_o}{\sqrt{2\pi}}\int_\tau^\tau e^-{i\omega t}\dd{t}\\
+	&=f_o\sqrt{\frac{2}{\pi}}\frac{\sin 	\omega\tau}{\omega}
+\end{align*}
+
+Entonces es evidente que:
+
+\begin{equation*}
+	x(t)=-\frac{f_o}{\pi}\int_{-\infty}^\infty \frac{\sin\omega\tau e^{-i\omega\tau}}{\omega(\omega-\omega_1)(\omega-\omega_2)}\dd{\omega}
+\end{equation*}
+
+donde $\omega_1=\sqrt{\omega^2_o -\alpha^2}-i\alpha$, $\omega_2=-\sqrt{\omega^2_o -\alpha^2}-i\alpha$. Las únicas singularidades son en $\omega=\omega_1$, $\omega=\omega_2$.
+
+\begin{equation*}
+	\sin\omega\tau = \frac{1}{2}(e^{i\omega\tau}-e^{-i\omega\tau})
+\end{equation*}
+
+Entonces $t>\tau$, la función $\frac{\sin\omega\tau e^{-i\omega\tau}}{\omega}$ está encerrada.
+
+Esto da entonces que:
+
+\begin{equation*}
+	x(t)=\frac{2i\pi f_o}{\pi} \lbrack \frac{ \sin\omega_{1}\tau e^{-i\omega_1\tau} }{\omega_1(\omega_1-\omega_2)} -\frac{ \sin\omega_{2}\tau e^{-i\omega_2\tau} }{\omega_2(\omega_1-\omega_2}\rbrack
+\end{equation*}
+
+\begin{equation*}
+	x(t)=\frac{2if_o}{\omega_1 \omega_2(\omega_1-\omega_2}(\omega_2\sin\omega_{1}\tau e^{-i\omega_1\tau} - \omega_2\sin\omega_{2}\tau e^{-i\omega_2\tau})
+\end{equation*}
+
+Para una forma real hay que hacer que  $\omega_1 =\sqrt{\omega^2_o -\alpha^2}-i\alpha$, $\omega_2=-\sqrt{\omega^2_o -\alpha^2}-i\alpha$; $\omega_1\omega_2 = -\omega^2_o$ y expresar el seno en términos del exponencial:
+
+\begin{align*}
+	x(t)&=\frac{2i\pi f_o}{\pi}(e^{(\alpha+ip)(\tau-t)} + (e^{(\alpha-ip)(\tau-t)} - e^{-(\alpha+ip)(\tau-t)} - (e^{-(\alpha-ip)(\tau-t)}\\
+	&+(\frac{i\alpha}{p})(e^{(\alpha+ip)(\tau-t)} - (e^{(\alpha-ip)(\tau-t)} - e^{-(\alpha+ip)(\tau-t)} - (e^{-(\alpha-ip)(\tau-t)} ))
+\end{align*}
+
+Lo que es igual a
+
+
+\begin{align*}
+	x(t)&=\frac{2i\pi f_o}{\pi}\lbrack\cos p(t-\tau) + (\frac{i\alpha}{p})\sin p(t-\tau)\rbrack e^{-\alpha(t-\tau)}\\ 
+	&- \frac{2i\pi f_o}{\pi}\lbrack \cos p(t-\tau) + \frac{\alpha}{p}\sin(t-\tau)\rbrack e^{-\alpha(t-\tau)}
+\end{align*}
+
+Para $t<-\tau$ el contorno cierra arriba y será cero
+%-------------------------------------------------
+%Segundo ejercicio
+%-------------------------------------------------
+\part{Ejemplo 1}
+\section{Definición vista en clase}
+
+Desarrollar el ejemplo 2 de las notas de las transformadas de Fourier.\\
+Ejemplo: Considerar el oscilador armónico amortiguado que actúa en una fuerza externa $g(t)$. El movimiento del oscilador está situado por la ecuación:
+\begin{equation*}
+	\ddot{x}(t) + 2\alpha \dot x (t) + \omega^2_o x(t) = f(t)
+\end{equation*}
+
+donde $f(t) = \frac{1}{m} g(t)$\\
+
+Por definición, podemos extender este resultado a:
+
+\begin{align*}
+	f(t) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \hat F(\omega) e^{i\omega t}\dd{\omega}\\
+	f(t) &= \int_{-\infty}^\infty \hat F(\omega) e^{-i\omega t} \dd{\omega}
+\end{align*}
+
+Para este caso en específico utilzaremos:
+
+\begin{align*}
+	x(t) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \hat A(\omega) e^{-i\omega t}\dd{t}
+\end{align*}
+
+Resulta evidente ver a $\hat A$ como la transformada de la ecuación diferencial, por lo que usando las propiedades de las derivadas de las transformadas obtenemos:
+
+\begin{align*}
+	\mathcal{F}\lbrace \dot{x} \rbrace &= -i\omega \mathcal{F}\lbrace x \rbrace\\
+	\mathcal{F}\lbrace \ddot{x} \rbrace &= -\omega^2 \mathcal{F}\lbrace x \rbrace
+\end{align*}
+
+Sustituyendo en la ecuación diferencial:
+
+\begin{equation*}
+	-\omega^2 A(\omega) -2\alpha\omega iA(\omega)+\omega^2_oA(\omega) = F(\omega)
+\end{equation*}
+
+Despejando entonces $A(\omega)$
+
+\begin{equation*}
+	A(\omega) = \frac{F(\omega)}{(\omega^2_o -\omega)-2i\alpha\omega}
+\end{equation*}
+%--
+\begin{equation*}
+	x(t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \frac{F(\omega)e^{-i\omega t}}{\omega^2_o -\omega)-2i\alpha\omega}
+\end{equation*}
+
+Igualando el denominador a cero podemos ver que:
+
+\begin{equation*}
+	\omega^2_o -\omega)-2i\alpha\omega = \zeta (\omega)
+\end{equation*}
+
+\begin{align*}
+	-\omega^2 -2i\alpha\omega + \omega^2_o &=0\\
+	\omega &= -\frac{2i\alpha \pm\sqrt{4\omega^2_o - 4\alpha^2}}{-2}\\
+	\omega &= -i\alpha \pm \sqrt{-(\alpha^2-\omega^2_o)}
+\end{align*}
+
+Si los valores de $\alpha>0$ quiere decir que los polos se localizan en:
+
+\begin{equation*}
+	\omega_{1,2} = \pm \sqrt{\omega^2_o-\alpha^2}+i\alpha \text{ Si $\omega_o > \alpha$}
+\end{equation*}
+%-------------------------------------------------
+%Tercer ejercicio
+%-------------------------------------------------
+\part{Ejemplo 1}
+\section{Definición del libro}
+
+%-------------------------------------------------
+%Final del documento
+%-------------------------------------------------
+
+\end{document}

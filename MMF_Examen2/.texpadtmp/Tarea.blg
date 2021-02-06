@@ -1,0 +1,5 @@
+[1] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is '/Users/desneruda/OneDrive - Universidad Autonoma de Yucatan/Documents/UADY/MMF/v2/Tarea/.texpadtmp/Tarea.blg'
+[120] biber-darwin:315> INFO - === Fri Feb  5, 2021, 14:00:44
+[177] Biber.pm:371> INFO - Reading '/Users/desneruda/OneDrive - Universidad Autonoma de Yucatan/Documents/UADY/MMF/v2/Tarea/.texpadtmp/Tarea.bcf'
+[457] Utils.pm:193> WARN - No data sources defined!
