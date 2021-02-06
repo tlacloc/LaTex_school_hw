@@ -410,8 +410,103 @@ Para obtener una forma real proponemos entonces $\omega_1 = \gamma + i\alpha$, $
 %-------------------------------------------------
 %Tercer ejercicio
 %-------------------------------------------------
+\part{Tarea 1 Ecuaciones diferenciales parciles}
+%--- primer ejercicio
+\section{Primer ejercicio}
+A stretched string of length $L$ is "plucked" at the point and it's initial shape is given by:\\
+
+\begin{equation*}
+	\mu(x,o) = 
+	\begin{cases}
+		\frac{hx}{\varepsilon} & x<\varepsilon\\
+		\frac{h(l-x)}{L-\varepsilon} & x\leq\varepsilon\\
+	\end{cases}
+\end{equation*}
+
+The initial distribution of velocities is zero, that is $\pdv{t}\mu(x,o)=0$. Show that the motion of the string is given by the equation:\\
+
+\begin{equation*}
+	\mu(x,t)=\frac{2h^2}{\pi^L\varepsilon(L-\varepsilon)}\sum^\infty_{n=1}\frac{1}{\pi^2}\sin(\frac{n\pi\varepsilon}{L})\sin(\frac{n\pi x}{L})\cos(\frac{n\pi ct}{L})
+\end{equation*}
+
+La solución general está dada por:
+\begin{equation*}
+	\mu(x,t)=\sum^\infty_{n=1}\lbrace An\cos(\frac{n\pi ct}{L}) + Bn\sin(\frac{n\pi ct}{L})\rbrace\sin(\frac{n\pi x}{L})
+\end{equation*}
+Las condiciones iniciales $\pdv{\mu(x,t)}{t}=V_o(x)=0$
+
+\begin{equation*}
+	\pdv{\mu(x,t)}{t}=Bn\frac{cn\pi}{L}\sin(\frac{xn\pi}{L})
+\end{equation*}
+Por lo que $Bn=0$ para cualquier $n$. Por lo tanto, obtenemos de la segunda condición inicial:
+
+\begin{equation*}
+	\mu(x,0)=\sum^\infty_{n=1}An\sin(\frac{xn\pi}{L})
+\end{equation*}
+
+o
+
+\begin{equation*}
+	\mu(x,0)=An\sin(\frac{xn\pi}{L})
+\end{equation*}
+
+Entonces necesitamos encontrar el coeficiente $An$, el cual obtenemos al transformar $\mu(x,0)$ a una serie seno de Fourier:
+
+\begin{equation*}
+	An=\frac{1}{L}\int^L_0\mu(x,0)\sin(\frac{nx\pi}{L})\dd{x}
+\end{equation*}
+
+\begin{equation*}
+	An=\frac{1}{L} \lbrace\int^\varepsilon_0 x\sin(\frac{nx\pi}{L})\dd{x} + \frac{h}{L-\varepsilon}\int^L_\varepsilon x\sin(\frac{nx\pi}{L})\dd{x}\rbrace
+\end{equation*}
+
+\begin{equation*}
+	\int x\sin(\frac{nx\pi}{L})\dd{x} = -\frac{Lx}{n\pi}x\cos(\frac{nx\pi}{L}) + \frac{L^2}{n^2\pi^2}\sin(\frac{nx\pi}{L}) 
+\end{equation*}
+
+\begin{align*}
+	An &=\frac{1}{L} \lbrace -\frac{Lx}{n\pi}x\cos(\frac{nx\pi}{L}) + \frac{L^2}{n^2\pi^2}\sin(\frac{nx\pi}{L})\rbrace^\varepsilon_0 \\
+	&+ \frac{h}{L-\varepsilon}\lbrace\sin(\frac{nx\pi}{L})\rbrace^L_\varepsilon \\
+	&- \frac{h}{L-\varepsilon}\lbrace -\frac{Lx}{n\pi}\cos(\frac{nx\pi}{L}) + \frac{L^2}{n^2\pi^2}\sin(\frac{nx\pi}{L})\rbrace^L_\varepsilon
+\end{align*}
+
+\begin{align*}
+	An &= \frac{2}{L}(-\frac{Lh}{n\pi}\cos(\frac{n\pi\varepsilon}{L}) + \frac{L^2h}{n^2\pi^2\varepsilon}\sin(\frac{n\pi\varepsilon}{L}) + \frac{L^2h}{n^2\pi^2(L-\varepsilon)}\cos(\frac{n\pi\varepsilon}{L}) \\
+	&- \frac{Lh\varepsilon}{n\pi(L-\varepsilon)}\cos(\frac{n\pi\varepsilon}{L}) +\frac{L^2h}{n^2\pi^2(L-\varepsilon)}\sin(\frac{n\pi\varepsilon}{L}))
+\end{align*}
+
+\begin{align*}
+	\frac{2h}{n^2\pi^2}\left(\frac{L\sin(\frac{n\pi\varepsilon}{L})-n\pi\varepsilon\cos(\frac{n\pi\varepsilon}{L})}{\varepsilon} + \frac{L\sin(\frac{n\pi\varepsilon}{L})+n\pi(L-\varepsilon)\cos(\frac{n\pi\varepsilon}{L})}{L-\varepsilon}\right)
+\end{align*}
+
+\begin{align*}
+	An = \frac{2hL^2}{\pi^2\varepsilon(L-\varepsilon)n^2}\sin(\frac{n\pi\varepsilon}{L})
+\end{align*}
+
+Finalmente con $Bn=0$
+
+\begin{equation*}
+	\mu(x,t)=\frac{2hL^2}{\pi^2\varepsilon(L-\varepsilon)}\sum^\infty_{n=1}\frac{1}{n^2}\sin(\frac{n\pi\varepsilon}{L})\sin(\frac{n\pi x}{L})\cos(\frac{n\pi ct}{L})
+\end{equation*}
+
+
+%- segundo ejercicio
+\section{Segundo ejercicio}
+When a piano string of lenght L is stuck by the piano hammer near the point $x=\varepsilon$, it's assumed that the inicial distribution of velocities is given by:
+
+\begin{equation*}
+	v_o(x)=
+	\begin{cases}
+		v_o\cos(\frac{\pi (x-\varepsilon)}{d}) & \text{para }|x-\varepsilon | < \frac{a}{2}\\
+		0 & \text{para }|x-\varepsilon | > \frac{a}{2}
+	\end{cases}
+\end{equation*}
+
+%-------------------------------------------------
+%Cuarto ejercicio
+%-------------------------------------------------
 \part{Tarea 1}
-\section{Ecuaciones diferenciales parciles}
+\section{Ecuaciones diferenciales parciales}
 
 %-------------------------------------------------
 %Final del documento
