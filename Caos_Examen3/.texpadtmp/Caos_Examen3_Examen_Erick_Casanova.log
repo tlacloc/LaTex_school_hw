@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 02:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 03:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,32 +847,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 <./figuras/caos_1_1.png, id=12, 489.83pt x 441.65pt>
 File: ./figuras/caos_1_1.png Graphic file (type png)
 <use ./figuras/caos_1_1.png>
-Package pdftex.def Info: ./figuras/caos_1_1.png  used on input line 106.
-(pdftex.def)             Requested size: 293.90025pt x 264.99203pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package pdftex.def Info: ./figuras/caos_1_1.png  used on input line 104.
+(pdftex.def)             Requested size: 146.95012pt x 132.49602pt.
 <./figuras/caos_1_2.png, id=13, 489.83pt x 441.65pt>
 File: ./figuras/caos_1_2.png Graphic file (type png)
 <use ./figuras/caos_1_2.png>
-Package pdftex.def Info: ./figuras/caos_1_2.png  used on input line 122.
-(pdftex.def)             Requested size: 293.90025pt x 264.99203pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package pdftex.def Info: ./figuras/caos_1_2.png  used on input line 115.
+(pdftex.def)             Requested size: 146.95012pt x 132.49602pt.
 [1
 
-]
+ <./figuras/caos_1_1.png>]
 <./figuras/caos_1_3.png, id=23, 489.83pt x 441.65pt>
 File: ./figuras/caos_1_3.png Graphic file (type png)
 <use ./figuras/caos_1_3.png>
-Package pdftex.def Info: ./figuras/caos_1_3.png  used on input line 137.
+Package pdftex.def Info: ./figuras/caos_1_3.png  used on input line 132.
 (pdftex.def)             Requested size: 146.95012pt x 132.49602pt.
+ [2 <./figuras/caos_1_2.png> <./figuras/caos_1_3.png>]
+<./figuras/caos_2_1.png, id=30, 758.835pt x 566.115pt>
+File: ./figuras/caos_2_1.png Graphic file (type png)
+<use ./figuras/caos_2_1.png>
+Package pdftex.def Info: ./figuras/caos_2_1.png  used on input line 156.
+(pdftex.def)             Requested size: 227.65225pt x 169.8358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+[3 <./figuras/caos_2_1.png>]
+<./figuras/caos_2_2.png, id=35, 753.81625pt x 503.8825pt>
+File: ./figuras/caos_2_2.png Graphic file (type png)
+<use ./figuras/caos_2_2.png>
+Package pdftex.def Info: ./figuras/caos_2_2.png  used on input line 166.
+(pdftex.def)             Requested size: 226.14662pt x 151.16591pt.
+<./figuras/caos_2_3.png, id=36, 753.81625pt x 503.8825pt>
+File: ./figuras/caos_2_3.png Graphic file (type png)
+<use ./figuras/caos_2_3.png>
+Package pdftex.def Info: ./figuras/caos_2_3.png  used on input line 175.
+(pdftex.def)             Requested size: 226.14662pt x 151.16591pt.
+<./figuras/caos_2_4.png, id=37, 753.81625pt x 503.8825pt>
+File: ./figuras/caos_2_4.png Graphic file (type png)
+<use ./figuras/caos_2_4.png>
+Package pdftex.def Info: ./figuras/caos_2_4.png  used on input line 182.
+(pdftex.def)             Requested size: 226.14662pt x 151.16591pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./figuras/caos_1_1.png>] [3 <./figuras/caos_1_2.png> <./figuras/caos_1_3.png>] [4] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
+<./figuras/caos_2_5.png, id=38, 753.81625pt x 503.8825pt>
+File: ./figuras/caos_2_5.png Graphic file (type png)
+<use ./figuras/caos_2_5.png>
+Package pdftex.def Info: ./figuras/caos_2_5.png  used on input line 189.
+(pdftex.def)             Requested size: 226.14662pt x 151.16591pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./figuras/caos_2_2.png> <./figuras/caos_2_3.png>] [5 <./figuras/caos_2_4.png> <./figuras/caos_2_5.png>] [6] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -882,18 +911,18 @@ Package logreq Info: Writing requests to 'Caos_Examen3_Examen_Erick_Casanova.run
 
  ) 
 Here is how much of TeX's memory you used:
- 24185 strings out of 492616
- 460346 string characters out of 6129482
- 843788 words of memory out of 5000000
- 27906 multiletter control sequences out of 15000+600000
- 541808 words of font info for 59 fonts, out of 8000000 for 9000
+ 24217 strings out of 492616
+ 461020 string characters out of 6129482
+ 842828 words of memory out of 5000000
+ 27932 multiletter control sequences out of 15000+600000
+ 542160 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,63p,823b,1796s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (5 pages, 228917 bytes).
+ 42i,8n,63p,849b,1796s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (7 pages, 429648 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
