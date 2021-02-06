@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 00:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,7 +841,15 @@ LaTeX Info: Redefining \% on input line 2.
 
  [1
 
-] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
+] [2
+
+] [3] [4
+
+] [5] [6
+
+] [7] [8
+
+] [9] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -851,18 +859,18 @@ Package logreq Info: Writing requests to 'Caos_Examen3_Examen_Erick_Casanova.run
 
  ) 
 Here is how much of TeX's memory you used:
- 24156 strings out of 492616
- 459803 string characters out of 6129482
+ 24166 strings out of 492616
+ 459940 string characters out of 6129482
  839764 words of memory out of 5000000
- 27881 multiletter control sequences out of 15000+600000
- 541462 words of font info for 58 fonts, out of 8000000 for 9000
+ 27891 multiletter control sequences out of 15000+600000
+ 542067 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,63p,823b,1773s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (2 pages, 81522 bytes).
+ 42i,6n,63p,823b,1844s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (10 pages, 120392 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.blg'
-[66] biber-darwin:315> INFO - === Sat Feb  6, 2021, 00:38:26
-[116] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.bcf'
-[307] Utils.pm:193> WARN - No data sources defined!
+[64] biber-darwin:315> INFO - === Sat Feb  6, 2021, 00:51:06
+[101] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.bcf'
+[251] Utils.pm:193> WARN - No data sources defined!
