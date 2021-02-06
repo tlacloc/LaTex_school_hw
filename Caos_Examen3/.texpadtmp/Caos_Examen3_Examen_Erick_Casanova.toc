@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {0.1}Primer ejercicio}{1}% 
 \contentsline {section}{\numberline {0.2}Segundo ejercicio}{3}% 
 \contentsline {section}{\numberline {0.3}Tercer ejercicio}{6}% 
-\contentsline {section}{\numberline {0.4}Cuarto ejercicio}{6}% 
+\contentsline {section}{\numberline {0.4}Cuarto ejercicio}{7}% 

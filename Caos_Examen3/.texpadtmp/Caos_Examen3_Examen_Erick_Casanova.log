@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 03:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 04:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,7 +901,27 @@ Package pdftex.def Info: ./figuras/caos_2_5.png  used on input line 189.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./figuras/caos_2_2.png> <./figuras/caos_2_3.png>] [5 <./figuras/caos_2_4.png> <./figuras/caos_2_5.png>] [6] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
+[4 <./figuras/caos_2_2.png> <./figuras/caos_2_3.png>] [5 <./figuras/caos_2_4.png> <./figuras/caos_2_5.png>]
+<./figuras/caos_3_1.png, id=49, 483.8075pt x 432.61626pt>
+File: ./figuras/caos_3_1.png Graphic file (type png)
+<use ./figuras/caos_3_1.png>
+Package pdftex.def Info: ./figuras/caos_3_1.png  used on input line 219.
+(pdftex.def)             Requested size: 145.14337pt x 129.78587pt.
+<./figuras/caos_3_2.png, id=50, 483.8075pt x 432.61626pt>
+File: ./figuras/caos_3_2.png Graphic file (type png)
+<use ./figuras/caos_3_2.png>
+Package pdftex.def Info: ./figuras/caos_3_2.png  used on input line 228.
+(pdftex.def)             Requested size: 145.14337pt x 129.78587pt.
+<./figuras/caos_3_3.png, id=51, 483.8075pt x 432.61626pt>
+File: ./figuras/caos_3_3.png Graphic file (type png)
+<use ./figuras/caos_3_3.png>
+Package pdftex.def Info: ./figuras/caos_3_3.png  used on input line 235.
+(pdftex.def)             Requested size: 145.14337pt x 129.78587pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./figuras/caos_3_1.png> <./figuras/caos_3_2.png>] [7 <./figuras/caos_3_3.png>] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -911,18 +931,18 @@ Package logreq Info: Writing requests to 'Caos_Examen3_Examen_Erick_Casanova.run
 
  ) 
 Here is how much of TeX's memory you used:
- 24217 strings out of 492616
- 461020 string characters out of 6129482
- 842828 words of memory out of 5000000
- 27932 multiletter control sequences out of 15000+600000
+ 24236 strings out of 492616
+ 461421 string characters out of 6129482
+ 842854 words of memory out of 5000000
+ 27948 multiletter control sequences out of 15000+600000
  542160 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,63p,849b,1796s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (7 pages, 429648 bytes).
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Caos_Examen3/.texpadtmp/Caos_Examen3_Examen_Erick_Casanova.pdf (8 pages, 525019 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
