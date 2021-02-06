@@ -317,14 +317,101 @@ Igualando el denominador a cero podemos ver que:
 
 Si los valores de $\alpha>0$ quiere decir que los polos se localizan en:
 
+% casos de \omeega?
 \begin{equation*}
 	\omega_{1,2} = \pm \sqrt{\omega^2_o-\alpha^2}+i\alpha \text{ Si $\omega_o > \alpha$}
 \end{equation*}
+
+\begin{equation*}
+	\omega_{1,2} = \pm i\sqrt{\omega^2_o-\alpha^2}+i\alpha \text{ Si $\omega_o < \alpha$}
+\end{equation*}
+
+\begin{equation*}
+	\omega_{1} = \omega_{2} = i\alpha \text{ doble raiz en $\omega_o = \alpha$}
+\end{equation*}
+
+Analizando el caso de dos polos simples:\\
+En este caso tenemos que $\zeta(\omega) = -(\omega - \omega_1)(\omega-\omega_2)$, evaluando los residuos tenemos que:
+En $\omega = \omega_1$
+
+\begin{equation*}
+	\frac{\hat F (\omega_1) e^{i\omega_1 t}}{\omega_1-\omega_2}
+\end{equation*}
+
+En $\omega = \omega_2$
+
+\begin{equation*}
+	-\frac{\hat F (\omega_2) e^{i\omega_1 t}}{\omega_1-\omega_2}
+\end{equation*}
+
+Donde $\omega_1 - \omega_2 = 2\sqrt{\omega^2_o -\alpha^2} = 2\gamma$.
+
+Consideramos al función de la forma:
+
+\begin{equation*}
+	f(t)=
+	\begin{cases}
+		fo & |t|<\tau\\
+		0 & |t|>\tau
+	\end{cases}
+\end{equation*}
+
+La transformada de Fourier de $F(t)$
+
+\begin{align*}
+	\hat F(\omega) &= f_o \int^\infty_{-\infty} e^{-i\omega t} \dd{t}\\
+	&= \frac{2f_o}{2}\frac{1}{-i\omega}e^{-i\omega t}|^\tau_{-\tau}\\
+	&= -\frac{f_o}{\pi\omega}\frac{e^{-i\omega \tau}- e^{-i\omega \tau}}{2i}\\
+	&= \frac{2f_o\sin\omega\tau}{\omega}
+\end{align*}
+
+Entonces las soluciones quedan:
+
+\begin{equation*}
+	x(t)=\frac{2f_o}{2\pi}\int^\infty_{-\infty} \frac{\sin(\omega\tau) e^{i\omega t}}{\omega(\omega-\omega_1)(\omega	-\omega_2)}\dd{\omega}
+\end{equation*}
+
+Se emplea el teorema del residuo y se observa que los polos se encuentran:
+
+\begin{align*}
+	x(t)=\frac{2i\pi f_o}{\pi}(\frac{\sin(\omega_2\tau) e^{i\omega_2 t}}{\omega_2(\omega_1-\omega_2)}-\frac{\sin(\omega_1\tau) e^{i\omega_1 t}}{\omega_1(\omega_1-\omega_2)})
+\end{align*}
+
+Así queda entonces:
+\begin{align*}
+	x(t)=\frac{2if_o}{\omega_1\omega_2(\omega_1-\omega_2)}(
+	\sin(\omega_2\tau) e^{i\omega_2 t} - \sin(\omega_1\tau) e^{i\omega_1 t})
+\end{align*}
+
+Para obtener una forma real proponemos entonces $\omega_1 = \gamma + i\alpha$, $\omega_2 = -\gamma + i\alpha$\\
+
+\begin{equation*}
+	\omega_1\omega_2 = -\omega^2_o
+\end{equation*}
+
+\begin{equation*}
+	\omega_1-\omega_2 = 2\gamma
+\end{equation*}
+
+\begin{align*}
+	x(t)&=\frac{fo}{-\omega^2_o} ((\gamma +i\alpha)(\frac{e^{2-(\gamma+i\alpha)\tau}-e^{-i(-\gamma+i\alpha)\tau}}{2}) e^{i(-\gamma+i\alpha)\tau}\\
+	&-(-\gamma +i\alpha)(\frac{e^{i(\gamma+i\alpha)\tau}-e^{-i(\gamma+i\alpha)\tau}}{2}) e^{i(\gamma+i\alpha)\tau}
+\end{align*}
+
+\begin{align*}
+	x(t)&= \frac{f_0}{2\omega_o^2\gamma} \lbrace (-\gamma +i\alpha) (e^{i(\gamma+i\alpha)\tau} - e^{-i(\gamma +i\alpha)\tau}) e^{i(-\gamma+i\alpha)\tau}\\ 
+	&- (\gamma +i\alpha) (e^{i(\gamma+i\alpha)\tau} - e^{-i(-\gamma +i\alpha)\tau}) e^{i(-\gamma+i\alpha)\tau}\rbrace\\
+	x(t)&= \frac{f_0}{2\omega_o^2}\lbrace -e^{-\alpha+i\gamma)(\tau+t)}+e^{(-\alpha+i\gamma)(t-\tau)}-e^{-\alpha-i\gamma)(\tau+t)}+e^{(-\alpha-i\gamma)(t-\tau)}\\
+	&+(\frac{i\alpha}{\gamma})(e^{-\alpha+i\gamma)(\tau+t)}-e^{(-\alpha+i\gamma)(t-\tau)}-e^{-\alpha-i\gamma)(\tau+t)}+e^{(-\alpha-i\gamma)(t-\tau)})\rbrace\\
+	x(t)&= \frac{f_0}{2\omega_o^2}\lbrace\cos(\gamma(t-\tau))+\frac{\alpha}{\gamma}\sin(\gamma(t-\tau))\rbrace e^{-\alpha(t-\tau)}\\
+	&- \frac{f_0}{2\omega_o^2}\lbrace\cos(\gamma(t+\tau))+\frac{\alpha}{\gamma} \sin(\gamma(t+\tau))\rbrace e^{-\alpha(t+\tau)}
+\end{align*}
+
 %-------------------------------------------------
 %Tercer ejercicio
 %-------------------------------------------------
-\part{Ejemplo 1}
-\section{Definición del libro}
+\part{Tarea 1}
+\section{Ecuaciones diferenciales parciles}
 
 %-------------------------------------------------
 %Final del documento

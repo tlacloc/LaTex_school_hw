@@ -1,5 +1,5 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is '/Users/desneruda/OneDrive - Universidad Autonoma de Yucatan/Documents/UADY/MMF/v2/Tarea/.texpadtmp/Tarea_MMF_Erick_Casanova.blg'
-[62] biber-darwin:315> INFO - === Fri Feb  5, 2021, 19:38:12
-[96] Biber.pm:371> INFO - Reading '/Users/desneruda/OneDrive - Universidad Autonoma de Yucatan/Documents/UADY/MMF/v2/Tarea/.texpadtmp/Tarea_MMF_Erick_Casanova.bcf'
-[286] Utils.pm:193> WARN - No data sources defined!
+[1] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/MMF_Examen2/.texpadtmp/Tarea_MMF_Erick_Casanova.blg'
+[64] biber-darwin:315> INFO - === Fri Feb  5, 2021, 21:32:03
+[99] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/MMF_Examen2/.texpadtmp/Tarea_MMF_Erick_Casanova.bcf'
+[256] Utils.pm:193> WARN - No data sources defined!
