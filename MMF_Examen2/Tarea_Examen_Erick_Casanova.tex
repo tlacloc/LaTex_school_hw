@@ -94,21 +94,145 @@
 %-------------------------------------------------
 %Primer Ejercicio
 %-------------------------------------------------
-Una esfera hueca de radio que esta dividida en dos por el ecuador por un aislante delgado. La mitad superior se encuentra a un potencial constante $V_0$ y el hemisferio inferior a un potencial nulo, como se muestra en la figura.\\
+\textit{Una esfera hueca de radio que esta dividida en dos por el ecuador por un aislante delgado. La mitad superior se encuentra a un potencial constante $V_0$ y el hemisferio inferior a un potencial nulo, como se muestra en la figura.}\\
 
-Demostrar que el potencial dentro de la esfera esta dado por:
+\textit{Demostrar que el potencial dentro de la esfera esta dado por:}
 
 \begin{equation}
 	\phi(r, \theta) = \frac{V_0}{2}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{r}{c}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
 \end{equation}
 
-mientras que en el potencial exterior es:
+\textit{mientras que en el potencial exterior es:}
 \begin{equation}
 	\phi(r, \theta) = \frac{V_0c}{2r}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{c}{r}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
 \end{equation}
 
 
-Ayuda: resolver la ecuación de Laplace $\nabla^2 \phi(r,\theta,\varphi) =0$ en coordenadas esféricas
+\textit{Ayuda: resolver la ecuación de Laplace $\nabla^2 \phi(r,\theta,\varphi) =0$ en coordenadas esféricas}\\
+
+
+%--- resolución de la ecuación de Laplace
+
+Primero haremos el cálculo de la ecuación de Laplace en coordenadas esféricas, la cual está expresada de la forma
+
+\begin{equation} %eq laplace en coordenadas esfericas
+\label{eqn:laplace_spherical_coordinates}
+	\left(\frac{1}{r^2}\pdv{r}r^2\pdv{r} + \frac{1}{r^2\sin\theta}\pdv{\theta}\sin\theta\pdv{\theta} + \frac{1}{r^2\sin^2\theta}\pdv[2]{\varphi}\right)F(r,\theta,\varphi) = 0
+\end{equation}
+
+
+De esto partimos que la función $F(r,\theta,\varphi)$ puede expresarse de tal forma que $F(r,\theta,\varphi)=R(r)\Theta(\theta)\Phi(\varphi)$. Por lo que podemos multiplicar ambas partes de la ecuación \ref{eqn:laplace_spherical_coordinates} por $\frac{r^2}{F}$, lo cual queda expresado como:
+
+\begin{equation*} %multiplicando por r^2/f
+	\frac{r^2}{F} \left(\frac{1}{r^2}\pdv{r}r^2\pdv{r} + \frac{1}{r^2\sin\theta}\pdv{\theta}\sin\theta\pdv{\theta} + \frac{1}{r^2\sin^2\theta}\pdv[2]{\varphi}\right)F(r,\theta,\varphi) = 0
+\end{equation*}
+
+Sustituyendo a $F(r,\theta,\varphi)$ por la propuesta
+
+
+\begin{equation*} %sustituir por funciones dep
+	\frac{r^2}{R\Theta\Phi} \left(\frac{1}{r^2}\pdv{r}r^2\pdv{r} + \frac{1}{r^2\sin\theta}\pdv{\theta}\sin\theta\pdv{\theta} + \frac{1}{r^2\sin^2\theta}\pdv[2]{\varphi}\right)R\Theta\Phi= 0
+\end{equation*}
+
+Ahora se expandirá la ecuación a conveniencia de tal modo que dejaremos los términos que dependen del radio de un lado y agruparemos los términos que dependen del ángulo polar o azimutal; quedando entonces:
+
+
+\begin{equation*}%agrupar terminos
+	\frac{1}{R}\pdv{r}r^2\pdv{r}R = -\frac{1}{\Theta\Phi}\left(\frac{1}{\sin\theta}\pdv{\theta}\sin\theta\pdv{\theta} + \frac{1}{\sin^2\theta}\pdv[2]{\varphi}\right)\Theta\Phi
+\end{equation*}
+
+Como $r$, $\theta$ y $\varphi$ son variables independientes quiere decir que ambos términos son iguales a una constante, lo que quiere decir que
+
+\begin{equation}
+\label{eqn:r_dep_sol_laplace} %parte de r
+	\frac{1}{R}\pdv{r}r^2\pdv{r}R = \mathcal{C}
+\end{equation}
+
+\begin{equation}
+\label{eqn:theta_phi_dep_sol_laplace} %parte de teta y phi
+	-\frac{1}{\Theta\Phi}\left(\frac{1}{\sin\theta}\pdv{\theta}\sin\theta\pdv{\theta} + \frac{1}{\sin^2\theta}\pdv[2]{\varphi}\right)\Theta\Phi = \mathcal{C}
+\end{equation}
+
+
+si a la ecuación \ref{eqn:theta_phi_dep_sol_laplace} la multiplicamos por $\sin^2\theta$ tenemos:
+
+\begin{equation*} % sin^2 tta
+	-\frac{1}{\Theta\Phi}\left(\sin\theta\pdv{\theta}\sin\theta\pdv{\theta} + \pdv[2]{\varphi}\right)\Theta\Phi = \mathcal{C}\sin^2\theta
+\end{equation*}
+
+Agrupando la ecuación en sus términos dependientes nos queda la siguiente igualdad:
+
+\begin{equation*} %agrupar
+	\frac{1}{\Theta}\sin\theta\pdv{\theta}\sin\theta	\pdv{\theta}\Theta+\mathcal{C}\sin^2\theta = - \frac{1}{\Phi}\pdv[2]{\varphi}\Phi 
+\end{equation*}
+
+Como anteriormente se vio, para que esta igualdad se cumpla, ambas partes de dicha ecuación deberán ser igualadas a una constante. Lo cual queda de la siguiente forma:
+
+\begin{equation}
+	\label{eq:teta_sol}
+	\frac{1}{\Theta}\sin\theta\pdv{\theta}\sin\theta	\pdv{\theta}\Theta+\mathcal{C}\sin^2\theta = \mathcal{B}
+\end{equation}
+
+\begin{equation}
+	\label{eq:phi_sol}
+	- \frac{1}{\Phi}\pdv[2]{\varphi}\Phi = \mathcal{B}
+\end{equation}
+
+Haciendo un despeje de la ecuación \ref{eq:phi_sol} podemos ver que podemos encontrar una solución, como se ve a continuación
+
+\begin{equation*}
+	\pdv[2]{\varphi}\Phi = -\Phi\mathcal{B}
+\end{equation*}
+
+al resolver la ecuación diferencial podemos ver que $\Phi$ está dada por:
+
+\begin{equation*}
+	\Phi(\varphi) = e^{\pm i\sqrt{\mathcal{B}}\varphi}
+\end{equation*}
+
+Si hacemos un análisis de esta ecuación podemos ver que es periódica con un ciclo de $2\pi$, lo que implica:
+
+\begin{equation*}
+	e^{\pm i\sqrt{\mathcal{B}}\varphi} = e^{\pm i\sqrt{\mathcal{B}}(\varphi+2\pi)}
+\end{equation*}
+
+En otras palabras, lo que quiere decir es que $\sqrt{\mathcal{B}}$ debe ser un entero, y por fines prácticos haremos la igualdad $\sqrt{\mathcal{B}} = k^2$, regresando a la solución tenemos entonces que la parte de $\Phi$ queda expresada como:
+
+\begin{equation*}
+	\Phi(\varphi) = e^{\pm ik^2\varphi}
+\end{equation*}
+
+Pasando ahora a la parte que depende de $\Theta$, partimos de la ecuación \ref{eq:teta_sol} y tomando la igualdad que encontramos anterior, la cual nos afirma que $\sqrt{\mathcal{B}} = k^2$
+
+\begin{equation*}
+	\frac{1}{\Theta}\sin\theta\pdv{\theta}\sin\theta	\pdv{\theta}\Theta+\mathcal{C}\sin^2\theta = k^2
+\end{equation*}
+
+Para hacer resolver esta ecuación diferencial tendremos que hacer un cambio de variable, el cual será proponer una función a modo que:
+
+\begin{equation*}
+	x=\cos\theta
+\end{equation*}
+
+Haciendo la regla de la cadena podemos ver:
+
+\begin{align*}
+	\pdv{\theta} &= \pdv{x}{\theta}\pdv{x}\\
+	&=-\sin\theta \pdv{x}
+\end{align*}
+
+Por otra parte tenemos la igualdad
+
+\begin{equation*}
+	\sin^2\theta = 1-\cos^2\theta
+\end{equation*}
+
+Por lo que con nuestro cambio de variable podemos ver que $\sin^2\theta = 1-x^2$. Sustituyendo en la ecuación podemos ver que:
+
+\begin{equation*}
+
+	\frac{1}{\Theta}\sin\theta\pdv{\theta}\sin\theta	\pdv{\theta}\Theta+\mathcal{C}\sin^2\theta = k^2
+\end{equation*}
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
