@@ -96,22 +96,62 @@
 %-------------------------------------------------
 %Primer Ejercicio
 %-------------------------------------------------
-\part{Primer ejercicio}
-Dada la función del espacio de fase $f(x) = x+cx^2+x^3+3$, halle el diagrama de bifurcación, seleccionando de modo adecuado el rango de validez del parámetro "$c$", así como el rango de validez de "$x$". Establezca los puntos en donde se daban las bifurcaciones (puntos de silla de montar), así como las ventanas (rango entre dos puntos de silla de montar).
+\section{Primer ejercicio}
+\textit{Dada la función del espacio de fase $f(x) = x+cx^2+x^3+3$, halle el diagrama de bifurcación, seleccionando de modo adecuado el rango de validez del parámetro "$c$", así como el rango de validez de "$x$". Establezca los puntos en donde se daban las bifurcaciones (puntos de silla de montar), así como las ventanas (rango entre dos puntos de silla de montar).}\\
+
+Lo primero que se hizo fue graficar en geogebra la función $f(x)$, generando un deslizador $c$ para probar con distintos valores hasta encontrar uno que nos genere un punto de silla de montar. Este valor fue cercano a $c=-2.7$ como podemos apreciar en la figura \ref{fig:Eje1_1}
+
+\begin{figure}[!h] %FUNCION
+	\centering
+	\includegraphics[scale=0.6]{caos_1_1.png}
+	\caption{Función $f(x)$ con valor $c$ que genera un punto silla de montar}
+	\label{fig:Eje1_1}
+\end{figure}
+
+Igual podemos apreciar que dicho punto de silla de montar se encuentra en $x\sim 1.72$. Ahora, para realizar el diagrama de difamación se tuvo que hacer un rango que incluya los valores de $c$, se optó por usar el rango $-4\leq c \leq-2$, y se optó por un rango en $x$ de $1\leq x \leq 3$, ya que dentro de este rango se encuentra el valor de $x$ que vimos anteriormente.
+
+Se realizó una secuencia de puntos con el comando
+\begin{verbatim}
+	Sequence(Sequence((c, Iteration(x + c x^2 + x^3 + 3, p, 100)),
+	 c, -4, -2, 0.01), p, 1, 3, 0.1)
+\end{verbatim}
+Cuyo resultado se puede ver en la figura \ref{fig:Eje1_2}
+
+\begin{figure}[!h] %DIFURCACION
+	\centering
+	\includegraphics[scale=0.6]{caos_1_2.png}
+	\caption{Diagrama de bifurcación}
+	\label{fig:Eje1_2}
+\end{figure}
+
+Igual se puede apreciar en la figura \ref{fig:Eje1_2} dos rectas, esas rectas están ubicados en los puntos de bifurcación del diagrama, ambas fueron aproximadas con dos deslizadores con el fin de tener una precisión mayor a solo ubicarlas, las rectas se encuentran en $x=-2.95$ y en $x=-2.87$. Por lo que la distancia entre ambas bifurcaciones puede ser calculada como:
+
+\begin{align*}
+	d &\sim |-2.95-(.2,87)|\\
+	&\sim 0.08
+\end{align*}
+
+También se puede apreciar de mejor manera el diagrama de bifurcación en la figura \ref{fig:Eje1_3}, en esta parte se le hizo un aumento a la gráfica donde se encuentran las bifurcacinoes
+\begin{figure}[!h] %ZOOM
+	\centering
+	\includegraphics[scale=0.3]{caos_1_3.png}
+	\caption{Vista aumentada de la región}
+	\label{fig:Eje1_3}
+\end{figure}
 %-------------------------------------------------
 %Segundo ejercicio
 %-------------------------------------------------
-\part{Segundo ejercicio}
+\section{Segundo ejercicio}
 Dada la función del espacio de fase $f(X) = \lambda (1-x)$, halle el diagrama de bifurcación, seleccionando de modo adecuado el rango de validez del parámetro "$\lambda$", así como el rango de validez de "$x$". Establezca los puntos en donde se dan las bifurcaciones (puntos de silla de montar), así como las ventanas (rango entre dos puntos de silla de montar)
 %-------------------------------------------------
 %Tercer ejercicio
 %-------------------------------------------------
-\part{Tercer ejercicio}
+\section{Tercer ejercicio}
 Dada la función del espacio de fase $f(X) = c\sin(x)$, halle el diagrama de bifurcación para $0\leq c \leq 8\pi$, en donde el rango de validez de "$x$" es $0\leq x \leq 2\pi$. Establezca los puntos en donde se dan las bifurcaciones (puntos de silla de montar), así como las ventanas (rango entre dos puntos de silla de montar)
 %-------------------------------------------------
 %Cuarto ejercicio
 %-------------------------------------------------
-\part{Cuarto ejercicio}
+\section{Cuarto ejercicio}
 Dada la función del espacio de fase $f(X) = 5\cos(x)$, en donde el rango de validez de "$x$" es $-2\pi\leq x \leq 2\pi$. Establezca el itinerario para puntos de la quinta iteración y aplique a estos puntos la función $\sigma$ (mapa shift), muestre los resultados tanto en el sistema binario como en el sistema decimal.
 %-------------------------------------------------
 %Final del documento
