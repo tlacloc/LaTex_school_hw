@@ -99,11 +99,13 @@
 \textit{Demostrar que el potencial dentro de la esfera esta dado por:}
 
 \begin{equation}
+	\label{eq:final_in}
 	\phi(r, \theta) = \frac{V_0}{2}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{r}{c}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
 \end{equation}
 
 \textit{mientras que en el potencial exterior es:}
 \begin{equation}
+	\label{eq:final_out}
 	\phi(r, \theta) = \frac{V_0c}{2r}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{c}{r}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
 \end{equation}
 
@@ -335,7 +337,115 @@ Los coeficientes $a$ y $b$ son determinados por las condiciones de frontera
 %- ahora si el ejercicio
 
 Partiendo de la solución anterior (eq: \ref{eq:sol_laplace}), ahora la función será el potencial que satisface dicha ecuación, tenemos que conocer los coeficientes por las condiciones de frontera, por lo que analizando dichas condiciones vemos que:
+\begin{equation*}
+	V=
+	\begin{cases}
+		V_o \text{ para } 0\leq\theta\leq\pi/2\\
+		0 \text{ para } \pi/2\leq\theta\leq\pi
+	\end{cases}
+\end{equation*}
 
+Siendo las condiciones tales que: $b=0$ y $r=r'$ tenemos entonces:
+
+\begin{equation*}
+	\sum^\infty_{c=0} a_c r'^c P_c(\cos\theta) = V
+\end{equation*}
+
+
+
+\begin{equation*}
+	\sum^\infty_{c=0} a_c r'^c \int^\pi_0  P_c(\cos\theta) P_n(\cos\theta)\sin\theta \dd{\theta} = \int^\pi_0 VP_n(\cos\theta)\sin\theta\dd{\theta}
+\end{equation*}
+
+Como:
+
+\begin{equation*}
+	\int^\pi_0  P_c(\cos\theta) P_n(\cos\theta)\sin\theta \dd{\theta} = \int^1_{-1}P_l(x)P_n(x)\dd{x}=\frac{2}{2n+1}\delta_{nl}
+\end{equation*}
+
+\begin{equation*}
+	a_nc^n\frac{2}{2n+1}=\int^\pi_0 VP_n(\cos\theta)\sin\theta\dd{\theta}
+\end{equation*}
+
+Cambiando $n$ a $l$ y $\cos\theta$ a $x$
+
+\begin{equation*}
+	a_l = \frac{2l+1}{2c^l}V_o\int^1_0P_l(x)\dd{x}
+\end{equation*}
+
+\begin{equation*}
+	v=\sum^\infty_{c=0} \frac{2l+1}{2c^l}V_o\int^1_0P_l(x)\dd{x} \frac{r^l}{c^l} P_l(\cos\theta)
+\end{equation*}
+
+podemos ver que:
+
+\begin{align*}
+	a_0 &= \frac{1}{2}V_0\\
+	a_1 &= \frac{3}{4c}V_0\\
+	a_2 &= 0\\
+	a_3 &= -\frac{7}{16c^3}V_0\\
+\end{align*}
+
+\begin{align*}
+	\int^1_0 P_l(x)\dd{x} = \frac{1}{2l+l}(P_{l-1}(0)-P_{l+1}(0))
+\end{align*}
+
+entonces $P_{l-1}(0)=P_{l+1}(0)=0$, esto implica que $a_l = 0$ para $\forall l \neq a_0$, entonces:
+
+\begin{equation*}
+	V = \frac{1}{2}V_0 + \sum^\infty_{c=0} a_{2n+1}r^{2n+1}P_{2n+1}(\cos\theta)
+\end{equation*}
+
+de modo que
+
+\begin{align*}
+	a_{2n+1}=\frac{4n+3}{2c^{2n+1}}V_0\int^1_0P_{2n+1}(x)\dd{x}
+\end{align*}
+
+Como 
+
+\begin{align*}
+	\int^1_0 P_{2n+1}(x)\dd{x} = \frac{P_{2n}(0)-P_{2n+2}(0)}{4n+3}
+\end{align*}
+
+
+igual se sabe que:
+
+\begin{align*}
+	P_{2n}(0) = (-1)^n\frac{(2n)!}{2^{2n}(n!)^2}
+\end{align*}
+
+Entonces
+
+\begin{align*}
+	\int^1_0P_{2n+1}(x)\dd{x} = \frac{1}{4n+3} (-1)^n\frac{(2n)!}{2^{2n}(n!)^2}\frac{4n+3}{2n+2} 
+\end{align*}
+
+Entonces V dentro de la estefa esta dado por
+
+\begin{align*}
+	V = \frac{V_0}{2}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{r}{c}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
+\end{align*}
+
+La cual es igual a la ecuación \ref{eq:final_in}, por lo que la primera parte se cumple, ahora para fuera de la esfera requerimos que $r\rightarrow\infty$, entonces los términos $a_l$ deben ser cero, quedando enterminos de $b_l$
+
+\begin{equation*}
+	\sum^\infty_{l=0}b_l\frac{1}{c^{l+1}}P_l(\cos\theta)=V
+\end{equation*}
+
+Y degido del argumento anterior
+
+\begin{equation*}
+	b_l\frac{1}{c^{l+1}}=\frac{2l+1}{2}V_0\int^1_0P_l(x)\dd{x}
+\end{equation*}
+
+lo que nos queda entonces:
+
+\begin{equation*}
+	V = \frac{V_0c}{2r}\{ 1 +\sum^\infty_{n=0}(-1)^n \frac{(2n)!(4n+3)}{2^{2n}(n!)(2n+2)}\left(\frac{c}{r}\right)^{2n+1}P_{2n+1}\cos(\theta)\}
+\end{equation*}
+
+Lo que también resulta igual a la ecuación \ref{eq:final_out}, por lo que ambas partes quedan demostradas
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
