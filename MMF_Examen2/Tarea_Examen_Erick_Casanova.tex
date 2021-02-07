@@ -202,6 +202,8 @@ En otras palabras, lo que quiere decir es que $\sqrt{\mathcal{B}}$ debe ser un e
 	\Phi(\varphi) = e^{\pm ik^2\varphi}
 \end{equation*}
 
+%-- teta
+
 Pasando ahora a la parte que depende de $\Theta$, partimos de la ecuación \ref{eq:teta_sol} y tomando la igualdad que encontramos anterior, la cual nos afirma que $\sqrt{\mathcal{B}} = k^2$
 
 \begin{equation*}
@@ -227,12 +229,113 @@ Por otra parte tenemos la igualdad
 	\sin^2\theta = 1-\cos^2\theta
 \end{equation*}
 
-Por lo que con nuestro cambio de variable podemos ver que $\sin^2\theta = 1-x^2$. Sustituyendo en la ecuación podemos ver que:
+Por lo que con nuestro cambio de variable podemos ver que $\sin^2\theta = 1-x^2$. Sustituyendo en la ecuación y haciendo $\Theta(\theta) = y(x)$ podemos ver que:
 
 \begin{equation*}
-
-	\frac{1}{\Theta}\sin\theta\pdv{\theta}\sin\theta	\pdv{\theta}\Theta+\mathcal{C}\sin^2\theta = k^2
+	\dv{x}\left(1-x^2\right)\dv{x}y+\left(\mathcal{C}-\frac{k^2}{1-x^2}\right)y=0
 \end{equation*}
+
+Con esta ecuación podemos ver el conflicto de que diverge para $x=\pm 1$, a menos que hagamos que $\mathcal{C} = c(c+1)$ lo que nos lleva a
+
+\begin{equation*}
+	\dv{x}\left(1-x^2\right)\dv{x}y+\left(c(c+1)-\frac{k^2}{1-x^2}\right)y=0
+\end{equation*}
+
+Otra cosa que tenemos que tener en cuenta es que para obtener una solución aceptable debemos hacer que $-c\leq k \leq c$. Entonces la solución de esta ecuación se puede expresar como su polinomio de Legendre asociado:
+
+\begin{equation*}
+	y(x)=P_c^{|k|}(x)
+\end{equation*}
+
+La solución para $k=0$
+\begin{equation*}
+	\dv{x}\left(1-x^2\right)\dv{x}y(x)+c(c+1)y(x)=0
+\end{equation*}
+
+Regresando entonces a nuestras variables iniciales
+
+\begin{equation*}
+	\Theta(\theta)=P_c^{|k|}(\cos\theta)
+\end{equation*}
+
+%--radio
+
+La parte que depende del radio de la ecuación de Laplace lo vimos anteriormente, y con las condiciones que hemos generado hasta ahora podemos expresarla de tal modo que:
+
+\begin{equation*}
+	r^2\dv[2]{r}R+2r\dv{r}R=c(c+1)R
+\end{equation*}
+
+Esta parte se debe resolver con un cambio de variable especial, se hará
+
+\begin{align*}
+	r&=e^t,\\
+	t&=\ln{r},\\
+	\dv{t}{r}&=\frac{1}{r}
+\end{align*}
+
+Entonces nos queda la siguiente expresión:
+\begin{equation*}
+	r^2\dv[2]{R}{r}+2r\dv{R}{r}=\dv[2]{R}{t}+\dv{R}{t}
+\end{equation*}
+
+la cual se expresa como:
+\begin{equation*}
+	\dv[2]{R}{t}+\dv{R}{t}=c(c+1)R
+\end{equation*}
+
+Esta ecuación diferencial se resuelve de manera sencilla, la cual podemos ver que la solución se representa como:
+
+\begin{equation*}
+	R(t)=e^{kt}
+\end{equation*}
+
+Entonces
+
+\begin{align*}
+	\dv{R}{t}&=ke^{kt}\\
+	\dv[2]{R}{t}&=k^2e^{kt}
+\end{align*}
+
+y $k$ puede ser determinada por:
+
+\begin{equation*}
+	k^2+k=c(c+1)
+\end{equation*}
+
+Entonces es evidente que
+
+\begin{equation*}
+	k=
+	\begin{cases}
+		c,\\
+		-c-1
+	\end{cases}
+\end{equation*}
+
+Entonces:
+
+\begin{equation*}
+	R(t)=
+	\begin{cases}
+		e^{ct}=e^{c\ln{r}}=r^c\\
+		e^{-(c+1)t}=e^{-(c+1)\ln{r}}=\frac{1}{r^{c+1}}
+	\end{cases}
+\end{equation*}
+
+Entonces la solución general de la ecuación de Laplace está dada por:
+
+\begin{equation}
+	\label{eq:sol_laplace}
+	F(r,\theta)=\sum^\infty_{c=0}\left(a_c r^c + b_c \frac{1}{r^{c+1}}\right)P_c(\cos\theta)
+\end{equation}
+
+Los coeficientes $a$ y $b$ son determinados por las condiciones de frontera
+
+%- ahora si el ejercicio
+
+Partiendo de la solución anterior (eq: \ref{eq:sol_laplace}), ahora la función será el potencial que satisface dicha ecuación, tenemos que conocer los coeficientes por las condiciones de frontera, por lo que analizando dichas condiciones vemos que:
+
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
