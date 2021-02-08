@@ -1,5 +1,5 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/YOGA_Bitacora/.texpadtmp/YOGA_Bitacora_Erick_Casanova.blg'
-[63] biber-darwin:315> INFO - === Sun Feb  7, 2021, 15:58:19
-[94] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/YOGA_Bitacora/.texpadtmp/YOGA_Bitacora_Erick_Casanova.bcf'
-[236] Utils.pm:193> WARN - No data sources defined!
+[1] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/YOGA_Bitacora/.texpadtmp/YOGA_Bitacora_Erick_Casanova.blg'
+[66] biber-darwin:315> INFO - === Sun Feb  7, 2021, 20:34:48
+[114] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/YOGA_Bitacora/.texpadtmp/YOGA_Bitacora_Erick_Casanova.bcf'
+[311] Utils.pm:193> WARN - No data sources defined!
