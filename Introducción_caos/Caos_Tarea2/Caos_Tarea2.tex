@@ -117,12 +117,69 @@ periódicos para esta ecuación, tomando una secuencia de periodicidad 4 y utili
 %--- sexto ejercicio
 \textit{Utilizando la expansión ternaria (utilice series), encuentre los números racionales que corresponda}
 
-
+%--- a
 0.212121...\\
+
+\begin{align*}
+	0.212121 &= \frac{2}{3^1}+\frac{1}{3^2}+\frac{2}{3^3}+\frac{1}{3^4}+\cdots \\
+	&= \frac{2}{3^1} \left(\frac{2}{3^0}+\frac{2}{3^2}\right) + \frac{1}{3^2} \left(\frac{1}{3^0} +\frac{1}{3^2}\right)+\cdots\\
+	&= \frac{7}{9} \sum^\infty_{i=0} \left(\frac{1}{3}\right)^{2i}\\
+	&= \frac{8}{27} \sum^\infty_{i=0} \left(\frac{1}{9}\right)^{i}\\
+	&= \frac{7}{9} \left(\frac{1/9}{1-1/9}\right)\\
+	&= \frac{7}{9}\times \frac{9}{8}\\
+	&= 0.875
+\end{align*}
+
+%--- b
 0.022022022...\\
+
+\begin{align*}
+	0.022022022 &= \frac{0}{3^1}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{0}{3^4}+\cdots \\
+	&= \frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^5}+\frac{2}{3^6}+\cdots\\
+	&= \frac{2}{3^2} \left(\frac{1}{3^0}+\frac{1}{3^3}\right) + \frac{2}{3^2} \left(\frac{1}{3^0} +\frac{1}{3^2}\right)+\cdots\\
+	&= \frac{8}{27} \sum^\infty_{i=0} \left(\frac{1}{3}\right)^{3i}\\
+	&= \frac{8}{27} \sum^\infty_{i=0} \left(\frac{1}{27}\right)^{i}\\
+	&= \frac{8}{27} \left(\frac{1/27}{1-1/27}\right)\\
+	&= \frac{8}{27}\times \frac{27}{28}\\
+	&= 0.307692
+\end{align*}
+
+%-- c
 0.00222...\\
+
+\begin{align*}
+	0.00222 &= \frac{0}{3^1}+\frac{0}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots \\
+	&= \frac{2}{3^3}+\frac{2}{3^4}+\frac{2}{3^5}+\cdots\\
+	&= \frac{2}{3^3} \left(1+\frac{1}{3^2}+\frac{1}{3^3}+\cdots\right)\\
+	&= \frac{8}{27} \sum^\infty_{i=0} \left(\frac{1}{3}\right)^{i}\\
+	&= \frac{2}{27}\times \frac{3}{2}\\
+	&= 0.111
+\end{align*}
+
+%--- d
 0.212010101...\\
+\begin{align*}
+	0.212010101 &= \frac{2}{3^1}+\frac{1}{3^2}+\frac{2}{3^3}+\frac{0}{3^4}+\cdots \\
+	&= \frac{2}{3^2}+\frac{1}{3^3}+\frac{2}{5^5}+\frac{1}{3^6}+\frac{1}{3^5}+\cdots\\
+	&= \frac{2}{3^1}+\frac{1}{3^2}+\frac{2}{3^3}+\frac{1}{3^5}\left(\frac{1}{3^0}+\frac{1}{3^2}+\cdots \right)\\
+	&=23/27 + \frac{1}{3^5} \sum^\infty_{i=0} \left(\frac{1}{3}\right)^{2i}\\
+	&=23/27 + \frac{1}{243} \sum^\infty_{i=0} \left(\frac{1}{9}\right)^{i}\\
+	&=23/27 + \frac{1}{243}\times\frac{9}{8}\\
+	&= 0.8564
+\end{align*}
+%--- e
 0.0101101101...\\
+\begin{align*}
+	0.0101101101 &= \frac{0}{3^1}+\frac{1}{3^2}+\frac{0}{3^3}+\frac{1}{3^4}+\cdots \\
+	&= \frac{1}{3^1}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots\\
+	&= \frac{1}{3^1}+\frac{1}{3^4}\left(\frac{1}{3^0}+\frac{1}{3^3}+\cdots \right) + \frac{1}{3^5}\left(\frac{1}{3^0}+\frac{1}{3^3}+\cdots \right)\\
+	&= 1/3^2 \left(\frac{1}{3^4}+\frac{1}{3^5}\right) \sum^\infty_{i=0}\left(\frac{1}{3}\right)^{3i}\\
+	&= 1/9 \left(\frac{1}{243}\right) \sum^\infty_{i=0}\left(\frac{1}{27}\right)^{i}\\
+	&=1/9 + \frac{1}{243}\times\frac{27}{26}\\
+	&= 0.11538
+\end{align*}
+
+
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
