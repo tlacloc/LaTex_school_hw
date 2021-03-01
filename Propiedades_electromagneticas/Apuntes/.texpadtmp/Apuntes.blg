@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Propiedades_electromagneticas/Apuntes/.texpadtmp/Apuntes.blg'
+[63] biber-darwin:315> INFO - === Mon Mar  1, 2021, 17:29:37
+[97] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Propiedades_electromagneticas/Apuntes/.texpadtmp/Apuntes.bcf'
+[239] Utils.pm:193> WARN - No data sources defined!
