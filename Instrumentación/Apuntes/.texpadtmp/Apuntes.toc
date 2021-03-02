@@ -1,0 +1,11 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}% 
+\contentsline {section}{\numberline {1.1}Formativa}{2}% 
+\contentsline {section}{\numberline {1.2}Objetivo del curso}{2}% 
+\contentsline {section}{\numberline {1.3}Metas}{2}% 
+\contentsline {section}{\numberline {1.4}Software de apoyo:}{3}% 
+\contentsline {chapter}{\numberline {2}Fundamentos de mediciones}{4}% 
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todos instrumentales de an\IeC {\'a}lisis}{5}% 
+\contentsline {chapter}{\numberline {4}Aplicaciones de los microcontroladores en sistemas de instrumentaci\IeC {\'o}n}{6}% 
+\contentsline {chapter}{\numberline {5}T\IeC {\'e}cnicas modernas para automatizaci\IeC {\'o}n de procesos}{7}% 

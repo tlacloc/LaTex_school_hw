@@ -1,0 +1,14 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is '/Users/desneruda/Documents/GitHub/LaTex_school_hw/InstrumentacioÌn/CasanovaE8MTarea1/.texpadtmp/CasanovaE8MTarea1.blg'
+[70] biber-darwin:315> INFO - === Tue Mar  2, 2021, 17:47:30
+[304] Biber.pm:371> INFO - Reading '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/CasanovaE8MTarea1/.texpadtmp/CasanovaE8MTarea1.bcf'
+[477] Biber.pm:889> INFO - Found 3 citekeys in bib section 0
+[506] Biber.pm:4093> INFO - Processing section 0
+[526] Biber.pm:4254> INFO - Looking for bibtex format file '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/CasanovaE8MTarea1/ref.bib' for section 0
+[528] bibtex.pm:1523> INFO - LaTeX decoding ...
+[535] bibtex.pm:1340> INFO - Found BibTeX data source '/Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/CasanovaE8MTarea1/ref.bib'
+[568] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[568] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[568] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[581] bbl.pm:636> INFO - Writing '/Users/desneruda/Documents/GitHub/LaTex_school_hw/InstrumentacioÌn/CasanovaE8MTarea1/.texpadtmp/CasanovaE8MTarea1.bbl' with encoding 'UTF-8'
+[582] bbl.pm:739> INFO - Output to /Users/desneruda/Documents/GitHub/LaTex_school_hw/InstrumentacioÌn/CasanovaE8MTarea1/.texpadtmp/CasanovaE8MTarea1.bbl

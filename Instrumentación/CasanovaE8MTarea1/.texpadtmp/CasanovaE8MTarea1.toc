@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Instrucciones}{2}% 
+\contentsline {section}{\numberline {1.1}Planteamiento}{2}% 
+\contentsline {section}{\numberline {1.2}Desarrollo}{2}% 
+\contentsline {chapter}{\numberline {2}Simuladores gratuitos}{3}% 
+\contentsline {section}{\numberline {2.1}Falstad}{3}% 
+\contentsline {section}{\numberline {2.2}Tinkercad}{4}% 
+\contentsline {section}{\numberline {2.3}Multisim}{5}% 
