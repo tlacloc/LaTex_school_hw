@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}% 
+\contentsline {section}{\numberline {1.1}Formativa y sumativa}{2}% 
+\contentsline {subsection}{\numberline {1.1.1}ADAs}{2}% 
+\contentsline {subsection}{\numberline {1.1.2}Ex\IeC {\'a}menes}{2}% 
+\contentsline {chapter}{\numberline {2}Ley de Ampere}{3}% 
+\contentsline {subsection}{\numberline {2.0.1}Tarea}{4}% 
+\contentsline {chapter}{\numberline {3}Inducci\IeC {\'o}n magn\IeC {\'e}tica}{5}% 
+\contentsline {chapter}{\numberline {4}Forma integral de la Ley de Ampere}{6}% 
+\contentsline {chapter}{\numberline {5}Potencial vectorial}{7}% 
+\contentsline {chapter}{\numberline {6}Desarrollo multipolar del potencial vectorial}{8}% 
+\contentsline {chapter}{\numberline {7}Ley de inducci\IeC {\'o}n de Faraday}{9}% 
+\contentsline {chapter}{\numberline {8}Energ\IeC {\'\i }a magn\IeC {\'e}tica}{10}% 
+\contentsline {chapter}{\numberline {9}Magnetismo en presencia de materia y ecuaciones de Maxwell}{11}% 
