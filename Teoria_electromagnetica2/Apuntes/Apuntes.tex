@@ -118,6 +118,10 @@ Hasta dos sesiones antes del examen se llevará a cabo una sesión para resolver
 
 % >>>>> FIGURA
 
+%-------------------------------------------------
+%Introducción
+\section{Introducción}
+
 Hay que imaginar que dentro de un cable existe una corriente $I'$, el cual se denomina como un circuito $C'$, y en otro punto del espacio hay otra curva $C$ con una corriente $I$. ¿Cómo se mide la fuerza que $C'$ ejerce sobre $C$?\\
 Se empieza definiendo un sistema de referencia, un punto del circuito donde circula $I'$ será asociado con un vector de posición $r'$ y el elemento que corre a lo largo de $C'$ se denomina como $\dd{s'}$, así a su vez para el circuito $C$ tendrán las mismas características pero no primadas. \\
 Ahora lo que habrá que denominar es la fuerza a travez de la ley de Ampere. Pero ¿Como determinamos la fuerza que la corriente $I'$ que circula a lo largo del circuito definido por $C'$, ejerce sobre la corriente $I$ que circula a lo largo del circuito definido por $C$?\\
@@ -184,10 +188,191 @@ Con esto podemos ver de manera más clara que se cumple
 	\vec{F}_{C' \rightarrow C} = - \vec{F}_{C \rightarrow C'} 
 \end{equation*}
 
-Por lo que queda demostrada la igualdad $\vec{F}_{C' \rightarrow C} + \vec{F}_{C \rightarrow C'} = 0$
+Por lo que queda demostrada la igualdad $\vec{F}_{C' \rightarrow C} + \vec{F}_{C \rightarrow C'} = 0$\\
+
+
+%-------------------------------------------------
+%corriente filamental infinitamente larga
+\section{Corriente filamental infinitamente larga}
+
+%---- ejercicio ------
+\section*{Ejercicio}
+Determinar la fuerza que una corriente filamental infinitamente larga sobre otra corriente filamental infinitamente larga.
+
+
+
+\textit{Respuesta}\\
+
+Se tomará la ecuación \ref{eq:ley_ampere} para resolver el problema, en este caso analizaremos el vector de cada línea:
+
+\begin{align*}
+	\vec{r}' &= z' \hat{k}\\
+	\dd{s}' &= \dd{z}'\hat{k}\\
+\end{align*}
+
+\begin{align*}
+	\vec{r} &= \rho \hat{\rho} + z \hat{k}\\
+	\dd{s} &= \dd{z}\hat{k}\\
+\end{align*}
+
+El triple producto nos queda como:
+
+\begin{align*}
+	II' \dd{z}\hat{k} \times [\dd{z'}\hat{k} \times [\rho \hat{\rho} + (z-z')\hat{k}]]
+\end{align*}
+
+
+Analizando el producto cruz de cada vector unitario
+
+\begin{align*}
+	\hat{\rho} \times \hat{\phi} &= \hat{k}\\
+	\hat{k} \times \hat{\rho} &= \hat{\phi} \\
+	\hat{\phi} \times \hat{k} &= \hat{\rho} 
+\end{align*}
+
+
+Entonces el triple producto vectorial nos queda como:
+
+\begin{align*}
+	II' \dd{z}\hat{k} \times [\dd{z'}\hat{k} \times [\rho \hat{\rho} + (z-z')\hat{k}]] = -II'\rho\dd{z}\dd{z'}\hat{\rho}
+\end{align*}
+
+y sustituyendo en la ecuación \ref{eq:ley_ampere} nos queda como:
+
+\begin{align*}
+	\vec{F}_{c'\rightarrow c} = \int_\infty^\infty \int_\infty^\infty \frac{ -II'\rho\dd{z}\dd{z'}\hat{\rho}}{(\rho^2 + (z-z')^2)^{3/2}}
+\end{align*}
+
+
+Podemos hacer un cambio de variable de tal modo que la ecuación nos puede quedar como:
+
+\begin{align*}
+	\begin{cases}
+		z - z' &= \omega \\
+		\dd{z'} &= -\dd{\omega}
+	\end{cases}
+\end{align*}
+
+\begin{align*}
+	\int_\infty^\infty \frac{\dd{z}}{(\rho^2 + (z-z')^2)^{3/2}} &= -\int \frac{\dd{\omega}}{(\rho^2 + (z-z')^2)^{3/2}}
+\end{align*}
+
+Haciendo un segundo cambio de variable de tal modo que:
+
+\begin{align*}
+	\begin{cases}
+		\omega &= \rho \tan{\theta}\\
+		\dd{\omega} &= \rho \sec^2{\theta}
+	\end{cases}
+\end{align*}
+
+
+\begin{align*}
+	-\int \frac{\rho \sec^2{\theta}\dd{\theta}}{\rho^3\sec^3{\theta}}&= -\frac{1}{\rho^2} \int \cos{\theta}\dd{\theta} \\
+	&= -\frac{1}{\rho^2}\sin{\theta}
+\end{align*}
+
+Regresando a nuestra variable, vemos que $\sin{\theta} = \frac{z-z'}{\sqrt{\rho^2 + (z-z')^2}}$, entonces la integral evaluada nos queda como:
+
+\begin{align*}
+	-\frac{1}{\rho^2} \frac{z-z'}{\sqrt{\rho^2 + (z-z')^2}}|^{z' = \infty}_{z' = -\infty} &= -\frac{1}{\rho^2}[-1-1]\\
+	&= \frac{2}{\rho^2}
+\end{align*}
+
+Regresando a la integral anterior tenemos
+
+\begin{align*}
+	\vec{F}_{c'\rightarrow c} &= -\frac{\mu_0II'}{4\pi}\rho\hat{\rho}\int^\infty_\infty \frac{2\dd{z}}{\rho^2}\\
+	&= \frac{\mu_0II'}{2\pi\rho^2}\rho\hat{\rho}\int^\infty_\infty \dd{z}
+\end{align*}
+
+
+Este término es la fuerza sobre el elemento $\dd{z}$ del circuito $C$. Entonces se define la fuerza por unidad de longitud sobre el circuito $C$ como:
+
+
+\begin{equation} % fuerza por unidad de longitud sobre el circuito
+	f = \frac{\mu_0II'}{2\pi\rho}\hat{\rho}
+	\label{eq:fuerza_por_unidad_de_longitud}
+\end{equation}
+
+
+%---- fin ejercicio ------
+
+%-------------------------------------------------
+% Análisis de la ecuación con el triple producto 
+%vs la que solo tiene el punto
+\section{Comparación de \ref{eq:ley_ampere_no_cruz} con \ref{eq:ley_ampere}}
+
+Ahora analizaremos la fuerza entre elementos de corriente. Partiendo de:
+
+\begin{equation}
+	\vec{F}_{c'\rightarrow c} = \oint \oint \dd{\vec{F}_{c'\rightarrow c}}
+\end{equation}
+
+
+de tal modo que: 
+
+\begin{align*}
+	\dd{\vec{F}_{c'\rightarrow c}} = \frac{\mu_0}{4\pi} \frac{I\dd{s}\times[I'\dd{s'}\times(r-r')]}{|r-r'|^3}
+\end{align*}
+
+
+Si nosotros plateamos que el elemento de fuerza de tal modo que
+
+\begin{align*}
+	\dd{\vec{F}_{c\rightarrow c'}} = \frac{\mu_0}{4\pi} \frac{I'\dd{s'}\times[I\dd{s}\times(r'-r)]}{|r'-r|^3}
+\end{align*}
+
+Esto nos quiere decir que:
+
+\begin{align*}
+	\dd{\vec{F}_{c'\rightarrow c}} + \dd{\vec{F}_{c\rightarrow c'}} \neq 0
+\end{align*}
+
+Ahora si lo planteamos con \ref{eq:ley_ampere_no_cruz}
+
+\begin{align*}
+	\dd{\vec{F}_{c'\rightarrow c}} = - \frac{\mu_0}{4\pi}\frac{I\dd{s}\cdot I'\dd{s'}(r-r')}{|r-r'|^3}
+\end{align*}
+
+
+\begin{align*}
+	\dd{\vec{F}_{c\rightarrow c'}} = - \frac{\mu_0}{4\pi}\frac{I'\dd{s'}\cdot I\dd{s}(r'-r)}{|r'-r|^3}
+\end{align*}
+
+Entonces si retomamos el análisis anterior nos queda que: 
+
+\begin{align*}
+	\dd{\vec{F}_{c'\rightarrow c}} + \dd{\vec{F}_{c\rightarrow c'}} = 0
+\end{align*}
+
+Esto es debido a que la ecuación \ref{eq:ley_ampere_no_cruz} ya toma encuenta que los circuitos están cerrados, así que en la práctica se deberá involucrar siempre \ref{eq:ley_ampere}. Por lo que nuestro estudio se centrará en el uso de dicha ecuación, ya que solo analizaremos partes del circuito.\\
+
+% ----- ejercicio ------
+\section*{Ejercicio}
+Una línea y un circuito cerrado rectangular, en este caso podemos ver que la parte C y A se cancelan en el circuito, quedando solo la parte B y D, las cuales pueden ser analizadas con \ref{eq:fuerza_por_unidad_de_longitud}, entonces sustituyendo vemos que:
+
+\begin{align*}
+	f &= \frac{\mu_0II'}{2\pi\rho}\hat{\rho}\\
+ &= \frac{\mu_0II'}{2\pi d}\hat{x}+ \frac{\mu_0II'}{2\pi(d+a)}\hat{x}\\
+ f &= \frac{\mu_0II'}{2\pi}\frac{-a}{d(d+a)} \hat{x}
+\end{align*}
+
+Podemos ver por el signo que esta fuerza es atractiva, aunque este resiltado no está completo, ya que es una fuerza por unidad de longitud, se debe multiplicar por $B$ para tener la expresión correcta, por lo que nos queda como:
+
+\begin{align*}
+	f &= -\frac{\mu_0II'}{2\pi}\frac{ab}{d(d+a)} \hat{x}
+\end{align*}
+
+
+% ---- fin ejercicio ----
+
+
+
+
 
 % ----- Tarea ------
-\subsection{Tarea}
+\section{Tarea}
 Capítulo 12: corrientes eléctricas, hacer un ensayo de las secciones 12-I, II, III
 
 
