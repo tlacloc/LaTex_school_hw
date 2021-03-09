@@ -191,6 +191,7 @@ Con esto podemos ver de manera más clara que se cumple
 Por lo que queda demostrada la igualdad $\vec{F}_{C' \rightarrow C} + \vec{F}_{C \rightarrow C'} = 0$\\
 
 
+
 %-------------------------------------------------
 %corriente filamental infinitamente larga
 \section{Corriente filamental infinitamente larga}
@@ -372,16 +373,172 @@ Podemos ver por el signo que esta fuerza es atractiva, aunque este resiltado no 
 
 
 % ----- Tarea ------
-\section{Tarea}
+\section{Tareas}
+	\subsection{Tarea 1}
 Capítulo 12: corrientes eléctricas, hacer un ensayo de las secciones 12-I, II, III
 
+	\subsection{Tarea 2}
+	
+	Corrientes, encontrar la fuerza que $I'$ ejerce sobre $I$.
+	
+	Partiendo de (\ref{eq:ley_ampere}), tenemos que definir los vectores que vamos a utilizar, los cuales serán
+	
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.15]{Tarea2_figura.png}
+		\caption{Dos circuitos}
+		\label{fig:Tarea2}
+	\end{figure}
+	
+	\begin{align*}
+		\vec{r}' &= a\cos\varphi'\hat{i} + a\sin\varphi'\hat{j}\\
+		\vec{r} &= a\cos\varphi\hat{i} + a\sin\varphi\hat{j}+d\hat{k}\\
+	\end{align*}
+	
+	\begin{align*}
+		\vec{r} - \vec{r}' &= a\cos\varphi\hat{i} + a\sin\varphi\hat{j}+d\hat{k} - (a\cos\varphi'\hat{i} + a\sin\varphi'\hat{j})\\
+		&= a(\cos\varphi-\cos\varphi')\hat{i} + a(\sin\varphi-\sin\varphi')\hat{j} + d\hat{k}
+	\end{align*}
+	
+	\begin{align*}
+		|\vec{r} - \vec{r}'| &= \sqrt{a^2(\cos\varphi-\cos\varphi')^2 + a^2(\sin\varphi-\sin\varphi')^2 + d^2}
+	\end{align*}
+	
+	\begin{align*}
+		\dd{s'} &= a \left(-\sin\varphi'\hat{i} + a\cos\varphi'\hat{j}\right)\dd{\varphi'}\\
+		\dd{s} &= a \left(-\sin\varphi\hat{i} + a\cos\varphi\hat{j}\right)\dd{\varphi'}
+	\end{align*}
+	
+	Entonces la fuerza que ejerce $C$ sobre $C'$ es
 
+	\begin{align*}
+		\vec{F}_{C'\rightarrow C}&= \frac{\mu_0}{4\pi}\int_0^{2\pi}\int_0^{2\pi} a \left(-\sin\varphi\hat{i} + a\cos\varphi\hat{j}\right)\dd{\varphi'} \times \left[ a \left(-\sin\varphi'\hat{i} + a\cos\varphi'\hat{j}\right)\dd{\varphi'} \times \frac{(\vec{r} - \vec{r}')}{|\vec{r} - \vec{r}'|^3}\right]
+	\end{align*}
 
+La tarea es hacer la resolución de esa integral de forma numérica
 %-------------------------------------------------
 %Inducción magnética
 %-------------------------------------------------
 
 \chapter{Inducción magnética}
+
+Definición de inducción magnética, partiendo de la ley de Ampere (\ref{eq:ley_ampere}) podemos agrupar los términos después del $I\dd{s}$ como $\vec{B}(r)$, de forma que:
+
+\begin{equation}
+	\vec{B}(r) = \frac{\mu_0}{4\pi}\oint_{C'} \frac{I'\dd{s'}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}
+	\label{eq:induccion_magnetica}
+\end{equation}
+
+A este término normalmente se le denomina como Ley de Biot-Savart.\\
+
+Para el conjunto de corriente $I'_k$ circuloando a lo largo de $C_k'$, entonces \ref{eq:induccion_magnetica} se puede escribir como:
+
+\begin{equation}
+	\vec{B}_T(r) = \sum_k \frac{\mu_0}{4\pi}\oint_{C'_k} \frac{I'_k\dd{s'_k}\times\left(\vec{r}-\vec{r}'_k\right)}{|\vec{r}-\vec{r}'_k|^3}
+	\label{eq:induccion_magnetica_k}
+\end{equation}
+
+Entonces la fuerza sobre un elemento de corriente $I\dd{s}$ situada en $\vec{r}$ producida por una inducción magnética:
+
+
+\begin{equation*}
+	\dd{F}_{C'\rightarrow I\dd{s}} = I\dd{s}\times\vec{B}(r)
+\end{equation*}
+
+Para elementos de corriente $I\dd{s}=\vec{k}\dd{a}=\vec{J}\dd{\tau}$, donde $\vec{k}$ y $\vec{J}$ son las densidades de corriente superficial y volumétrica, respectivamente:
+
+\begin{align*}
+	\vec{B}(r) &= \frac{\mu_0}{4\pi}\int_{S'} \frac{\vec{k}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}\dd{a'}\\
+	\vec{B}(r) &= \frac{\mu_0}{4\pi}\int_{V'} \frac{\vec{J}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}\dd{\tau'}
+\end{align*}
+
+La $\vec{k}$ se toma como corriente/longitud y $\vec{J}$ tiene corriente/área
+
+
+Entonces podemos ver que la fuerza se puede que ejerce 
+
+\begin{align*}
+	\vec{F}_{\vec{B}\rightarrow I } &= \oint_C I\dd{s}\times \vec{B}(r) \\
+	\vec{F}_{\vec{B}\rightarrow \vec{k} } &= \oint_C \vec{k}\times \vec{B}(r) \\
+	\vec{F}_{\vec{B}\rightarrow \vec{J} } &= \oint_C \vec{J}\times \vec{B}(r) \\
+\end{align*}
+
+donde
+
+\begin{align*}%casos de B
+	\vec{B} = 
+	\begin{cases}
+	\frac{\mu_0}{4\pi}\int_{S'} \frac{I'\dd{s'}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}\\
+	\frac{\mu_0}{4\pi}\int_{S'} \frac{\vec{k}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}\dd{a'}\\
+	\frac{\mu_0}{4\pi}\int_{V'} \frac{\vec{J}\times\left(\vec{r}-\vec{r}'\right)}{|\vec{r}-\vec{r}'|^3}\dd{\tau'}
+	\end{cases}
+\end{align*}
+
+
+% ----- ejercicio ------
+
+\section*{Ejercicio}
+
+Corriente filamental de longitud finita, calcular $\vec{B}$ en un punto cualesquiera $\vec{r}$
+
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.15]{Ejercicio3.png}
+		\caption{Corriente filamental}
+		\label{fig:Ejercicio3}
+	\end{figure}
+
+\begin{align*} %vectores de posición
+	\vec{r} &= \rho\cos{\varphi}\hat{i} + \rho\sin{\varphi}\hat{j} + z\hat{k}\\
+	&= \rho\hat{\rho} + z\hat{k}\\
+	\vec{r'} = z'\hat{k}
+\end{align*}
+
+\begin{align*} %diferencia de vectores de posición
+	\vec{r} -\vec{r'} &= \rho\hat{\rho} + \left(z- z'\right)\hat{k}
+\end{align*}
+
+\begin{align*} %modulo de la diferencia de vectores de posición
+	|\vec{r} -\vec{r'}| &= \sqrt{\rho^2 + \left(z- z'\right)^2}
+\end{align*}
+
+\begin{align*} %diferenciales
+	\dd{s'} &= \dd{z}\hat{k}
+\end{align*}
+
+
+Partiendo de \ref{eq:induccion_magnetica}
+
+\begin{align*} %sustitución en la ecuacion de inducción
+	\vec{B} = \frac{\mu_0}{4\pi}\int_{S'} \frac{I'\dd{s'}\times\left[\rho\hat{\rho} + \left(z- z'\right)\hat{k}\right]}{|\rho^2 + \left(z- z'\right)^2|^3}
+\end{align*}
+
+Tomando el resultado de un ejercicio anterior
+
+\begin{align*} %sol copiada xd
+	\vec{B} &= \frac{\mu_0}{4\pi}\int_{S'} \frac{I'\dd{s'}\times\left[\rho\hat{\rho} + \left(z- z'\right)\hat{k}\right]}{|\rho^2 + \left(z- z'\right)^2|^3}\\
+	&=  -\frac{\mu_0\rho}{4\pi}\frac{1}{\rho^2} \frac{z-z'}{\sqrt{\rho^2 + (z-z')^2}}|^{z' = L_2}_{z' = -L_1}
+\end{align*}
+
+Entonces nos queda como:
+
+\begin{align*} %evaluando
+	\vec{B} &=  -\frac{\mu_0}{4\pi\rho}\left[\frac{z+L_1}{\sqrt{\rho^2 + (z+L_1)^2}}- \frac{z-L_2}{\sqrt{\rho^2 + (z-L_2)^2}}\right]
+\end{align*}
+
+
+Podemos ver entonces si $L_1 \rightarrow \infty$ y $L_2 \rightarrow \infty$, entonces
+
+\begin{align*} %viendo algo ya hecho
+	\vec{B} &=  -\frac{\mu_0I'\hat{\varphi}}{4\pi\rho}
+\end{align*}
+
+% ---- fin ejercicio ----
+
+
+
 
 %-------------------------------------------------
 %Forma integral de la Ley de Ampere

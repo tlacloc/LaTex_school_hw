@@ -1,24 +1,30 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n y conceptos b\IeC {\'a}sicos}{2}% 
-\contentsline {section}{\numberline {1.1}Formativa}{2}% 
-\contentsline {section}{\numberline {1.2}Fechas importantes}{2}% 
-\contentsline {section}{\numberline {1.3}ADAs}{2}% 
-\contentsline {section}{\numberline {1.4}Proyectos}{3}% 
-\contentsline {chapter}{\numberline {2}Conducci\IeC {\'o}n de calor}{4}% 
-\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n a la conducci\IeC {\'o}n del calor}{4}% 
-\contentsline {section}{\numberline {2.2}Conducci\IeC {\'o}n de calor en es estado estacionario}{4}% 
-\contentsline {section}{\numberline {2.3}Conducci\IeC {\'o}n de calor en r\IeC {\'e}gimen transitorio}{4}% 
-\contentsline {chapter}{\numberline {3}Convecci\IeC {\'o}n de calor}{5}% 
-\contentsline {section}{\numberline {3.1}Fundamentos de la convecci\IeC {\'o}n}{5}% 
-\contentsline {section}{\numberline {3.2}Convecci\IeC {\'o}n externa forzada}{5}% 
-\contentsline {section}{\numberline {3.3}Convecc\IeC {\'o}n interna forzada}{5}% 
-\contentsline {section}{\numberline {3.4}Ebullici\IeC {\'o}n y condensaci\IeC {\'o}n}{5}% 
-\contentsline {chapter}{\numberline {4}Radiaci\IeC {\'o}n de calor}{6}% 
-\contentsline {section}{\numberline {4.1}Fundamentos de la radiaci\IeC {\'o}n}{6}% 
-\contentsline {section}{\numberline {4.2}Transferencia de calor por radiaci\IeC {\'o}n}{6}% 
-\contentsline {chapter}{\numberline {5}Transferencia de masa}{7}% 
-\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{7}% 
-\contentsline {section}{\numberline {5.2}Difusi\IeC {\'o}n de masa}{7}% 
-\contentsline {section}{\numberline {5.3}Convecci\IeC {\'o}n de masa}{7}% 
-\contentsline {section}{\numberline {5.4}Transferencia simultanea de calor y masa}{7}% 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n y conceptos b\IeC {\'a}sicos}{3}% 
+\contentsline {section}{\numberline {1.1}Formativa}{3}% 
+\contentsline {section}{\numberline {1.2}Fechas importantes}{3}% 
+\contentsline {section}{\numberline {1.3}ADAs}{3}% 
+\contentsline {section}{\numberline {1.4}Proyectos}{4}% 
+\contentsline {chapter}{\numberline {2}Conducci\IeC {\'o}n de calor}{5}% 
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n a la conducci\IeC {\'o}n del calor}{5}% 
+\contentsline {subsection}{\numberline {2.1.1}La termodinamica y la transferencia de calor}{5}% 
+\contentsline {subsection}{\numberline {2.1.2}Calor y otras formas de energ\IeC {\'\i }a}{6}% 
+\contentsline {subsection}{\numberline {2.1.3}Mecanismos de transferencia de calor}{6}% 
+\contentsline {subsection}{\numberline {2.1.4}Conducci\IeC {\'o}n}{6}% 
+\contentsline {subsection}{\numberline {2.1.5}Difusivilidad termica}{7}% 
+\contentsline {subsection}{\numberline {2.1.6}Radiaci\IeC {\'o}n}{7}% 
+\contentsline {section}{\numberline {2.2}Conducci\IeC {\'o}n de calor en es estado estacionario}{7}% 
+\contentsline {section}{\numberline {2.3}Conducci\IeC {\'o}n de calor en r\IeC {\'e}gimen transitorio}{8}% 
+\contentsline {chapter}{\numberline {3}Convecci\IeC {\'o}n de calor}{9}% 
+\contentsline {section}{\numberline {3.1}Fundamentos de la convecci\IeC {\'o}n}{9}% 
+\contentsline {section}{\numberline {3.2}Convecci\IeC {\'o}n externa forzada}{9}% 
+\contentsline {section}{\numberline {3.3}Convecc\IeC {\'o}n interna forzada}{9}% 
+\contentsline {section}{\numberline {3.4}Ebullici\IeC {\'o}n y condensaci\IeC {\'o}n}{9}% 
+\contentsline {chapter}{\numberline {4}Radiaci\IeC {\'o}n de calor}{10}% 
+\contentsline {section}{\numberline {4.1}Fundamentos de la radiaci\IeC {\'o}n}{10}% 
+\contentsline {section}{\numberline {4.2}Transferencia de calor por radiaci\IeC {\'o}n}{10}% 
+\contentsline {chapter}{\numberline {5}Transferencia de masa}{11}% 
+\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{11}% 
+\contentsline {section}{\numberline {5.2}Difusi\IeC {\'o}n de masa}{11}% 
+\contentsline {section}{\numberline {5.3}Convecci\IeC {\'o}n de masa}{11}% 
+\contentsline {section}{\numberline {5.4}Transferencia simultanea de calor y masa}{11}% 

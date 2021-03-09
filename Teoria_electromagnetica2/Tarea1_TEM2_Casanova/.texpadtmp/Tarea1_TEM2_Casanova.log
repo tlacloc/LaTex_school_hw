@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 MAR 2021 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 MAR 2021 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Apuntes.tex
-(./Apuntes.tex
+**Tarea1_TEM2_Casanova.tex
+(./Tarea1_TEM2_Casanova.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
@@ -674,12 +674,12 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count410
 \@quotereset=\count411
-(/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.aux
+(/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea1_TEM2_Casanova/.texpadtmp/Tarea1_TEM2_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
-\openout1 = `Apuntes.aux'.
+\openout1 = `Tarea1_TEM2_Casanova.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -809,11 +809,11 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `Apuntes.bcf'.
+\openout3 = `Tarea1_TEM2_Casanova.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Apuntes.bbl' found.
- (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.bbl)
+Package biblatex Info: ... file 'Tarea1_TEM2_Casanova.bbl' found.
+ (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea1_TEM2_Casanova/.texpadtmp/Tarea1_TEM2_Casanova.bbl)
 Package biblatex Info: Reference section=0 on input line 56.
 Package biblatex Info: Reference segment=0 on input line 56.
 LaTeX Font Info:    Try loading font information for U+msa on input line 56.
@@ -831,130 +831,49 @@ Package pdftex.def Info: ./figuras/UADY.png  used on input line 74.
 (pdftex.def)             Requested size: 110.81485pt x 180.37526pt.
  [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/UADY.png>] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.toc
-LaTeX Info: Redefining \sptext on input line 2.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `Apuntes.toc'.
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/UADY.png>]
+<./figuras/corriente_instantanea.png, id=12, 1003.75pt x 1003.75pt>
+File: ./figuras/corriente_instantanea.png Graphic file (type png)
+<use ./figuras/corriente_instantanea.png>
+Package pdftex.def Info: ./figuras/corriente_instantanea.png  used on input line 122.
+(pdftex.def)             Requested size: 150.556pt x 150.556pt.
 
- [1
-
-]
-Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[2
-
-]
-Cap\'{\i }tulo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-[3
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-[4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
-
- []
-
-[7]
-<./figuras/Tarea2_figura.png, id=45, 1003.75pt x 1003.75pt>
-File: ./figuras/Tarea2_figura.png Graphic file (type png)
-<use ./figuras/Tarea2_figura.png>
-Package pdftex.def Info: ./figuras/Tarea2_figura.png  used on input line 389.
+[1 <./figuras/corriente_instantanea.png>]
+<./figuras/ecuacion_continuidad.png, id=19, 1003.75pt x 1003.75pt>
+File: ./figuras/ecuacion_continuidad.png Graphic file (type png)
+<use ./figuras/ecuacion_continuidad.png>
+Package pdftex.def Info: ./figuras/ecuacion_continuidad.png  used on input line 164.
 (pdftex.def)             Requested size: 150.556pt x 150.556pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8]
-Overfull \hbox (81.94435pt too wide) detected at line 417
-[]
- []
-
-[9 <./figuras/Tarea2_figura.png>]
-Cap\'{\i }tulo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
-
- []
-
-[10
-
-]
-<./figuras/Ejercicio3.png, id=57, 1003.75pt x 1003.75pt>
-File: ./figuras/Ejercicio3.png Graphic file (type png)
-<use ./figuras/Ejercicio3.png>
-Package pdftex.def Info: ./figuras/Ejercicio3.png  used on input line 488.
-(pdftex.def)             Requested size: 150.556pt x 150.556pt.
- [11 <./figuras/Ejercicio3.png>] [12]
-Cap\'{\i }tulo 4.
-[13
-
-]
-Cap\'{\i }tulo 5.
-[14
-
-]
-Cap\'{\i }tulo 6.
-[15
-
-]
-Cap\'{\i }tulo 7.
-[16
-
-]
-Cap\'{\i }tulo 8.
-[17
-
-]
-Cap\'{\i }tulo 9.
-[18
-
-] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.aux
+[2] [3 <./figuras/ecuacion_continuidad.png>] [4] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea1_TEM2_Casanova/.texpadtmp/Tarea1_TEM2_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
-Package logreq Info: Writing requests to 'Apuntes.run.xml'.
-\openout1 = `Apuntes.run.xml'.
+Package logreq Info: Writing requests to 'Tarea1_TEM2_Casanova.run.xml'.
+\openout1 = `Tarea1_TEM2_Casanova.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24185 strings out of 492616
- 460265 string characters out of 6129482
- 846749 words of memory out of 5000000
- 27906 multiletter control sequences out of 15000+600000
- 542721 words of font info for 62 fonts, out of 8000000 for 9000
+ 24168 strings out of 492616
+ 460200 string characters out of 6129482
+ 843764 words of memory out of 5000000
+ 27894 multiletter control sequences out of 15000+600000
+ 540856 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,17n,63p,796b,1815s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.pdf (19 pages, 396526 bytes).
+ 42i,10n,63p,809b,1776s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea1_TEM2_Casanova/.texpadtmp/Tarea1_TEM2_Casanova.pdf (5 pages, 246244 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
