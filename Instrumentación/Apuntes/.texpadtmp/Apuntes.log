@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 MAR 2021 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 MAR 2021 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -860,21 +860,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
 [2
 
-] [3]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
+
+ []
+
+[3]
 Cap\'{\i }tulo 2.
+
+Overfull \hbox (0.40454pt too wide) in paragraph at lines 149--152
+[]\OT1/cmr/m/n/10.95 Actualmente se ne-ce-si-ta mo-ni-to-rear di-fe-ren-tes pro-ce-sos pa-ra es-te prop^^Sosi-
+ []
+
 [4
 
-]
+] [5]
 Cap\'{\i }tulo 3.
-[5
-
-]
-Cap\'{\i }tulo 4.
 [6
 
 ]
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 4.
 [7
+
+]
+Cap\'{\i }tulo 5.
+[8
 
 ] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/Apuntes/.texpadtmp/Apuntes.aux
 LaTeX Info: Redefining \sptext on input line 10.
@@ -886,18 +896,18 @@ Package logreq Info: Writing requests to 'Apuntes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24162 strings out of 492616
- 459649 string characters out of 6129482
+ 24166 strings out of 492616
+ 459691 string characters out of 6129482
  841656 words of memory out of 5000000
- 27886 multiletter control sequences out of 15000+600000
- 541770 words of font info for 59 fonts, out of 8000000 for 9000
+ 27890 multiletter control sequences out of 15000+600000
+ 542375 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,6n,63p,796b,1815s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/Apuntes/.texpadtmp/Apuntes.pdf (8 pages, 115408 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Instrumentación/Apuntes/.texpadtmp/Apuntes.pdf (9 pages, 126731 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
