@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 MAR 2021 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 MAR 2021 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -430,8 +430,29 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 Package: esdiff 
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
-)
-\c@thm=\count286
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count286
+\lst@gtempboxa=\box57
+\lst@token=\toks30
+\lst@length=\count287
+\lst@currlwidth=\dimen177
+\lst@column=\count288
+\lst@pos=\count289
+\lst@lostspace=\dimen178
+\lst@width=\dimen179
+\lst@newlines=\count290
+\lst@lineno=\count291
+\lst@maxwidth=\dimen180
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count292
+\lst@skipnumbers=\count293
+\lst@framebox=\box58
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+\c@thm=\count294
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -450,19 +471,19 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count287
+\etb@tempcnta=\count295
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 ))) (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count288
+\lrq@indent=\count296
  (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
@@ -471,47 +492,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count289
-\c@listtotal=\count290
-\c@listcount=\count291
-\c@liststart=\count292
-\c@liststop=\count293
-\c@citecount=\count294
-\c@citetotal=\count295
-\c@multicitecount=\count296
-\c@multicitetotal=\count297
-\c@instcount=\count298
-\c@maxnames=\count299
-\c@minnames=\count300
-\c@maxitems=\count301
-\c@minitems=\count302
-\c@citecounter=\count303
-\c@maxcitecounter=\count304
-\c@savedcitecounter=\count305
-\c@uniquelist=\count306
-\c@uniquename=\count307
-\c@refsection=\count308
-\c@refsegment=\count309
-\c@maxextratitle=\count310
-\c@maxextratitleyear=\count311
-\c@maxextraname=\count312
-\c@maxextradate=\count313
-\c@maxextraalpha=\count314
-\c@abbrvpenalty=\count315
-\c@highnamepenalty=\count316
-\c@lownamepenalty=\count317
-\c@maxparens=\count318
-\c@parenlevel=\count319
-\blx@tempcnta=\count320
-\blx@tempcntb=\count321
-\blx@tempcntc=\count322
-\blx@maxsection=\count323
-\blx@maxsegment@0=\count324
-\blx@notetype=\count325
-\blx@parenlevel@text=\count326
-\blx@parenlevel@foot=\count327
-\blx@sectionciteorder@0=\count328
-\blx@entrysetcounter=\count329
+\c@tabx@nest=\count297
+\c@listtotal=\count298
+\c@listcount=\count299
+\c@liststart=\count300
+\c@liststop=\count301
+\c@citecount=\count302
+\c@citetotal=\count303
+\c@multicitecount=\count304
+\c@multicitetotal=\count305
+\c@instcount=\count306
+\c@maxnames=\count307
+\c@minnames=\count308
+\c@maxitems=\count309
+\c@minitems=\count310
+\c@citecounter=\count311
+\c@maxcitecounter=\count312
+\c@savedcitecounter=\count313
+\c@uniquelist=\count314
+\c@uniquename=\count315
+\c@refsection=\count316
+\c@refsegment=\count317
+\c@maxextratitle=\count318
+\c@maxextratitleyear=\count319
+\c@maxextraname=\count320
+\c@maxextradate=\count321
+\c@maxextraalpha=\count322
+\c@abbrvpenalty=\count323
+\c@highnamepenalty=\count324
+\c@lownamepenalty=\count325
+\c@maxparens=\count326
+\c@parenlevel=\count327
+\blx@tempcnta=\count328
+\blx@tempcntb=\count329
+\blx@tempcntc=\count330
+\blx@maxsection=\count331
+\blx@maxsegment@0=\count332
+\blx@notetype=\count333
+\blx@parenlevel@text=\count334
+\blx@parenlevel@foot=\count335
+\blx@sectionciteorder@0=\count336
+\blx@entrysetcounter=\count337
 \labelnumberwidth=\skip79
 \labelalphawidth=\skip80
 \biblabelsep=\skip81
@@ -522,9 +543,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip86
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\c@mincomprange=\count330
-\c@maxcomprange=\count331
-\c@mincompwidth=\count332
+\c@mincomprange=\count338
+\c@maxcomprange=\count339
+\c@mincompwidth=\count340
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -532,74 +553,74 @@ File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count333
-\c@savedafterword=\count334
-\c@annotator=\count335
-\c@savedannotator=\count336
-\c@author=\count337
-\c@savedauthor=\count338
-\c@bookauthor=\count339
-\c@savedbookauthor=\count340
-\c@commentator=\count341
-\c@savedcommentator=\count342
-\c@editor=\count343
-\c@savededitor=\count344
-\c@editora=\count345
-\c@savededitora=\count346
-\c@editorb=\count347
-\c@savededitorb=\count348
-\c@editorc=\count349
-\c@savededitorc=\count350
-\c@foreword=\count351
-\c@savedforeword=\count352
-\c@holder=\count353
-\c@savedholder=\count354
-\c@introduction=\count355
-\c@savedintroduction=\count356
-\c@namea=\count357
-\c@savednamea=\count358
-\c@nameb=\count359
-\c@savednameb=\count360
-\c@namec=\count361
-\c@savednamec=\count362
-\c@translator=\count363
-\c@savedtranslator=\count364
-\c@shortauthor=\count365
-\c@savedshortauthor=\count366
-\c@shorteditor=\count367
-\c@savedshorteditor=\count368
-\c@labelname=\count369
-\c@savedlabelname=\count370
-\c@institution=\count371
-\c@savedinstitution=\count372
-\c@lista=\count373
-\c@savedlista=\count374
-\c@listb=\count375
-\c@savedlistb=\count376
-\c@listc=\count377
-\c@savedlistc=\count378
-\c@listd=\count379
-\c@savedlistd=\count380
-\c@liste=\count381
-\c@savedliste=\count382
-\c@listf=\count383
-\c@savedlistf=\count384
-\c@location=\count385
-\c@savedlocation=\count386
-\c@organization=\count387
-\c@savedorganization=\count388
-\c@origlocation=\count389
-\c@savedoriglocation=\count390
-\c@origpublisher=\count391
-\c@savedorigpublisher=\count392
-\c@publisher=\count393
-\c@savedpublisher=\count394
-\c@language=\count395
-\c@savedlanguage=\count396
-\c@origlanguage=\count397
-\c@savedoriglanguage=\count398
-\c@pageref=\count399
-\c@savedpageref=\count400
+\c@afterword=\count341
+\c@savedafterword=\count342
+\c@annotator=\count343
+\c@savedannotator=\count344
+\c@author=\count345
+\c@savedauthor=\count346
+\c@bookauthor=\count347
+\c@savedbookauthor=\count348
+\c@commentator=\count349
+\c@savedcommentator=\count350
+\c@editor=\count351
+\c@savededitor=\count352
+\c@editora=\count353
+\c@savededitora=\count354
+\c@editorb=\count355
+\c@savededitorb=\count356
+\c@editorc=\count357
+\c@savededitorc=\count358
+\c@foreword=\count359
+\c@savedforeword=\count360
+\c@holder=\count361
+\c@savedholder=\count362
+\c@introduction=\count363
+\c@savedintroduction=\count364
+\c@namea=\count365
+\c@savednamea=\count366
+\c@nameb=\count367
+\c@savednameb=\count368
+\c@namec=\count369
+\c@savednamec=\count370
+\c@translator=\count371
+\c@savedtranslator=\count372
+\c@shortauthor=\count373
+\c@savedshortauthor=\count374
+\c@shorteditor=\count375
+\c@savedshorteditor=\count376
+\c@labelname=\count377
+\c@savedlabelname=\count378
+\c@institution=\count379
+\c@savedinstitution=\count380
+\c@lista=\count381
+\c@savedlista=\count382
+\c@listb=\count383
+\c@savedlistb=\count384
+\c@listc=\count385
+\c@savedlistc=\count386
+\c@listd=\count387
+\c@savedlistd=\count388
+\c@liste=\count389
+\c@savedliste=\count390
+\c@listf=\count391
+\c@savedlistf=\count392
+\c@location=\count393
+\c@savedlocation=\count394
+\c@organization=\count395
+\c@savedorganization=\count396
+\c@origlocation=\count397
+\c@savedoriglocation=\count398
+\c@origpublisher=\count399
+\c@savedorigpublisher=\count400
+\c@publisher=\count401
+\c@savedpublisher=\count402
+\c@language=\count403
+\c@savedlanguage=\count404
+\c@origlanguage=\count405
+\c@savedoriglanguage=\count406
+\c@pageref=\count407
+\c@savedpageref=\count408
 \shorthandwidth=\skip87
 \shortjournalwidth=\skip88
 \shortserieswidth=\skip89
@@ -623,13 +644,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count401
-\c@textcitetotal=\count402
-\c@textcitemaxnames=\count403
-\c@biburlnumpenalty=\count404
-\c@biburlucpenalty=\count405
-\c@biburllcpenalty=\count406
-\c@smartand=\count407
+\c@textcitecount=\count409
+\c@textcitetotal=\count410
+\c@textcitemaxnames=\count411
+\c@biburlnumpenalty=\count412
+\c@biburlucpenalty=\count413
+\c@biburllcpenalty=\count414
+\c@smartand=\count415
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -639,8 +660,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count408
-\c@bbx:relatedtotal=\count409
+\c@bbx:relatedcount=\count416
+\c@bbx:relatedtotal=\count417
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -672,8 +693,8 @@ File: spanish.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count410
-\@quotereset=\count411
+\@quotelevel=\count418
+\@quotereset=\count419
 (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
@@ -681,31 +702,31 @@ LaTeX Info: Redefining \% on input line 10.
 )
 \openout1 = `Tarea2_TEM2_Casanova.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count412
-\scratchdimen=\dimen177
-\scratchbox=\box57
-\nofMPsegments=\count413
-\nofMParguments=\count414
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count415
-\MPscratchDim=\dimen178
-\MPnumerator=\count416
-\makeMPintoPDFobject=\count417
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count420
+\scratchdimen=\dimen181
+\scratchbox=\box59
+\nofMPsegments=\count421
+\nofMParguments=\count422
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count423
+\MPscratchDim=\dimen182
+\MPnumerator=\count424
+\makeMPintoPDFobject=\count425
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -721,12 +742,13 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \sptext on input line 56.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \sptext on input line 59.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 56.
+LaTeX Info: Redefining \selectfont on input line 59.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
@@ -806,6 +828,7 @@ Dictionary: translator-basic-dictionary, Language: English
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
+\c@lstlisting=\count426
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -814,87 +837,81 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Tarea2_TEM2_Casanova.bbl' found.
  (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.bbl)
-Package biblatex Info: Reference section=0 on input line 56.
-Package biblatex Info: Reference segment=0 on input line 56.
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+Package biblatex Info: Reference section=0 on input line 59.
+Package biblatex Info: Reference segment=0 on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <./figuras/UADY.png, id=1, 369.38pt x 601.24625pt>
 File: ./figuras/UADY.png Graphic file (type png)
 <use ./figuras/UADY.png>
-Package pdftex.def Info: ./figuras/UADY.png  used on input line 74.
+Package pdftex.def Info: ./figuras/UADY.png  used on input line 77.
 (pdftex.def)             Requested size: 110.81485pt x 180.37526pt.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/UADY.png>]
-
-LaTeX Warning: Reference `eq:ley_ampere' on page 1 undefined on input line 105.
-
 <./figuras/Tarea2_figura.png, id=12, 1003.75pt x 1003.75pt>
 File: ./figuras/Tarea2_figura.png Graphic file (type png)
 <use ./figuras/Tarea2_figura.png>
-Package pdftex.def Info: ./figuras/Tarea2_figura.png  used on input line 110.
+Package pdftex.def Info: ./figuras/Tarea2_figura.png  used on input line 113.
 (pdftex.def)             Requested size: 150.556pt x 150.556pt.
-[1 <./figuras/Tarea2_figura.png>]
-Overfull \hbox (71.52577pt too wide) detected at line 138
+ [1 <./figuras/Tarea2_figura.png>]
+Overfull \hbox (71.52577pt too wide) detected at line 141
 []
  []
 
 
-Overfull \hbox (58.46313pt too wide) detected at line 145
+Overfull \hbox (58.46313pt too wide) detected at line 148
 []
  []
 
 
-Overfull \hbox (61.5696pt too wide) detected at line 165
+Overfull \hbox (61.5696pt too wide) detected at line 168
 []
  []
 
 [2]
-Overfull \hbox (96.96404pt too wide) detected at line 199
+Overfull \hbox (96.96404pt too wide) detected at line 202
 []
  []
 
 [3]
-Overfull \hbox (60.03938pt too wide) detected at line 229
+Overfull \hbox (60.03938pt too wide) detected at line 232
 []
  []
 
 
-Overfull \hbox (24.56113pt too wide) detected at line 245
+Overfull \hbox (24.56113pt too wide) detected at line 248
 []
  []
 
-[4] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.aux
+[4] [5] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'Tarea2_TEM2_Casanova.run.xml'.
 \openout1 = `Tarea2_TEM2_Casanova.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24160 strings out of 492616
- 459876 string characters out of 6129482
- 851716 words of memory out of 5000000
- 27886 multiletter control sequences out of 15000+600000
- 541164 words of font info for 57 fonts, out of 8000000 for 9000
+ 25483 strings out of 492616
+ 478687 string characters out of 6129482
+ 872810 words of memory out of 5000000
+ 29198 multiletter control sequences out of 15000+600000
+ 540856 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,63p,809b,1778s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.pdf (5 pages, 273668 bytes).
+ 42i,11n,63p,809b,1772s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Tarea2_TEM2_Casanova/.texpadtmp/Tarea2_TEM2_Casanova.pdf (6 pages, 281813 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
