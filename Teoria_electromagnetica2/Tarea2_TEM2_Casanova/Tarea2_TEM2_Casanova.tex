@@ -206,12 +206,45 @@ Resolver de modo numérico con ayuda de algún software el siguiente ejercicio:
 	
 	Aplicando de nuevo distributividad
 	
-	\begin{align*}%parte vectorial
+	\begin{align*}%parte vectorial distrib
 		\left(-\sin\varphi\hat{i} + \cos\varphi\hat{j}\right)\dd{\varphi} \times d\cos\varphi'\hat{i}+d\sin\varphi'\hat{j}-a\left[\cos{(\varphi-\varphi')}-1\right]\hat{k} = \\
 		-d\sin\varphi \cos\varphi'\hat{i} * \hat{i} -d\sin\varphi\sin\varphi'\hat{i}*\hat{j}+ a\sin\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{i}*\hat{k}\\
 		+d\cos\varphi\cos\varphi'\hat{j}*\hat{i} + d\cos\varphi\sin\varphi'\hat{j}*\hat{j} - a\cos\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{j}*\hat{k}
 	\end{align*}
-
+	
+	Lo que nos queda de la siguiente manera
+	
+	\begin{align*}%parte vectorial eval
+		\left(-\sin\varphi\hat{i} + \cos\varphi\hat{j}\right)\dd{\varphi} \times d\cos\varphi'\hat{i}+d\sin\varphi'\hat{j}-a\left[\cos{(\varphi-\varphi')}-1\right]\hat{k} = \\
+		- d\sin\varphi\sin\varphi'\hat{k} - a\sin\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{j}\\
+		-d\cos\varphi\cos\varphi'\hat{k} - a\cos\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{i}
+	\end{align*}
+	
+	Agrupando términos semejantes
+	
+	\begin{align*}%agrupando
+		\left(-\sin\varphi\hat{i} + \cos\varphi\hat{j}\right)\dd{\varphi} \times d\cos\varphi'\hat{i}+d\sin\varphi'\hat{j}-a\left[\cos{(\varphi-\varphi')}-1\right]\hat{k} = \\
+		- a\cos\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{i} - a\sin\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{j}
+		- d\left( \sin\varphi\sin\varphi'+\cos\varphi\cos\varphi'\right)\hat{k} 
+	\end{align*}
+	
+	Retomando una de las igualdades trigonométricas vistas con anterioridad: 
+	
+	\begin{align*}%trig
+		\left(-\sin\varphi\hat{i} + \cos\varphi\hat{j}\right)\dd{\varphi} \times d\cos\varphi'\hat{i}+d\sin\varphi'\hat{j}-a\left[\cos{(\varphi-\varphi')}-1\right]\hat{k} = \\
+		- a\cos\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{i} - a\sin\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{j}
+		- d\cos{(\varphi - \varphi')}\hat{k} 
+	\end{align*}
+	
+	Regresando a la integral:
+	
+	\begin{align*}%integral a resolver
+		\vec{F}_{C'\rightarrow C} &= \frac{\mu_0a^2}{4\pi}\int_0^{2\pi}\int_0^{2\pi}\frac{ - a\cos\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{i} }{\left(a^2(\cos\varphi-\cos\varphi')^2 + a^2(\sin\varphi-\sin\varphi')^2 + d^2\right)^{3/2}}\dd{\varphi}\dd{\varphi'}\\
+		&+ \frac{\mu_0a^2}{4\pi}\int_0^{2\pi}\int_0^{2\pi}\frac{ - a\sin\varphi\left[\cos{(\varphi-\varphi')}-1\right]\hat{j} }{\left(a^2(\cos\varphi-\cos\varphi')^2 + a^2(\sin\varphi-\sin\varphi')^2 + d^2\right)^{3/2}}\dd{\varphi}\dd{\varphi'}\\
+		&+ \frac{\mu_0a^2}{4\pi}\int_0^{2\pi}\int_0^{2\pi}\frac{ - d\cos{(\varphi - \varphi')}\hat{k}  }{\left(a^2(\cos\varphi-\cos\varphi')^2 + a^2(\sin\varphi-\sin\varphi')^2 + d^2\right)^{3/2}}\dd{\varphi}\dd{\varphi'}
+	\end{align*}
+	
+	Las tres integrales que nos quedan son mucho más fáciles de programar
 %-------------------------------------------------
 %Final del documento
 %-------------------------------------------------
