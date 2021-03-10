@@ -24,7 +24,7 @@
 \usepackage{physics} %algunos simbolos de derivadas
 
 \usepackage{listings} %para codigos
-
+\usepackage[final]{pdfpages} %para agregar pdfs
 
 %path donde se encuentran las imagenes
 \graphicspath{ {./figuras/} }
@@ -279,6 +279,10 @@ Resolver de modo numérico con ayuda de algún software el siguiente ejercicio:
 	Se puede cambiar para cualquier valor de $a$ y $d$, solo hay que tener en cuenta que para una precisión de 500, el resultado toma aproximadamente media hora\footnote{Cálculos hechos en una MacBook Pro, 2.5 GHz Dual-Core Intel Core i5, 16 GB 1600 MHz DDR3}, Aunque la ventaja de este modelo, es que se puede modificar la precisión dependiendo de la capacidad de cálculo de cada computadora, volviéndolo más o menos preciso al modificar el número de iteraciones.\\
 	
 	Analizando el resultado, podemos ver a simple vista que los términos en las componentes $\hat{i}$ y $\hat{j}$ son de repulsión, aunque prácticamente nulos, al tener una magnitud en el orden de $\sim 10\times^{-21}$, quedando sólo los términos en el eje de las $\hat{k}$, el cual resulta ser de atracción.
+	
+	A continuación se anexa la notebook donde se hicieron los cálculos de las integrales.
+	
+	\includepdf[pages=-]{Solucion_numerica_integral.pdf}
 
 %-------------------------------------------------
 %Final del documento
