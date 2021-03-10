@@ -137,7 +137,7 @@ Resolver de modo numérico con ayuda de algún software el siguiente ejercicio:
 	Entonces la fuerza que ejerce $C$ sobre $C'$ es
 
 	\begin{align*}%integral a resolver
-		\vec{F}_{C'\rightarrow C}&= \frac{\mu_0}{4\pi}\int_0^{2\pi}\int_0^{2\pi} a \left(-\sin\varphi\hat{i} + a\cos\varphi\hat{j}\right)\dd{\varphi} \times \left[ a \left(-\sin\varphi'\hat{i} + \cos\varphi'\hat{j}\right)\dd{\varphi'} \times \frac{(\vec{r} - \vec{r}')}{|\vec{r} - \vec{r}'|^3}\right]
+		\vec{F}_{C'\rightarrow C}&= \frac{\mu_0}{4\pi}\int_0^{2\pi}\int_0^{2\pi} a \left(-\sin\varphi\hat{i} + \cos\varphi\hat{j}\right)\dd{\varphi} \times \left[ a \left(-\sin\varphi'\hat{i} + \cos\varphi'\hat{j}\right)\dd{\varphi'} \times \frac{(\vec{r} - \vec{r}')}{|\vec{r} - \vec{r}'|^3}\right]
 	\end{align*}
 	
 	
@@ -274,6 +274,11 @@ Resolver de modo numérico con ayuda de algún software el siguiente ejercicio:
 	\begin{equation*}
 		F = 2.47217\times 10^{-22}\hat{i} + 3.17913\times 10^{-21}\hat{j} - 1.25636\times 10^{-4}\hat{k}
 	\end{equation*}
+	
+	
+	Se puede cambiar para cualquier valor de $a$ y $d$, solo hay que tener en cuenta que para una precisión de 500, el resultado toma aproximadamente media hora\footnote{Cálculos hechos en una MacBook Pro, 2.5 GHz Dual-Core Intel Core i5, 16 GB 1600 MHz DDR3}, Aunque la ventaja de este modelo, es que se puede modificar la precisión dependiendo de la capacidad de cálculo de cada computadora, volviéndolo más o menos preciso al modificar el número de iteraciones.\\
+	
+	Analizando el resultado, podemos ver a simple vista que los términos en las componentes $\hat{i}$ y $\hat{j}$ son de repulsión, aunque prácticamente nulos, al tener una magnitud en el orden de $\sim 10\times^{-21}$, quedando sólo los términos en el eje de las $\hat{k}$, el cual resulta ser de atracción.
 
 %-------------------------------------------------
 %Final del documento
