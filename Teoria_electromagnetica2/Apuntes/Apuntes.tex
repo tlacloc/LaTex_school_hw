@@ -493,7 +493,7 @@ Corriente filamental de longitud finita, calcular $\vec{B}$ en un punto cualesqu
 \begin{align*} %vectores de posición
 	\vec{r} &= \rho\cos{\varphi}\hat{i} + \rho\sin{\varphi}\hat{j} + z\hat{k}\\
 	&= \rho\hat{\rho} + z\hat{k}\\
-	\vec{r'} = z'\hat{k}
+	\vec{r'} &= z'\hat{k}
 \end{align*}
 
 \begin{align*} %diferencia de vectores de posición
@@ -538,8 +538,45 @@ Podemos ver entonces si $L_1 \rightarrow \infty$ y $L_2 \rightarrow \infty$, ent
 % ---- fin ejercicio ----
 
 
+\section*{Ejercicio}
 
+Cálculo de la inducción magnética en una espira
 
+\begin{figure}[!h] %figura 
+	\centering
+	\includegraphics[scale=0.15]{induccionMag_ej2.png}
+	\caption{Una espira y un punto}
+	\label{fig:Tarea2}
+\end{figure}
+
+\begin{align*} %vectores de posicion
+	r &= z\hat{k}\\
+	r' &= a\cos{\phi'}\hat{i} + a\sin{\phi'}\hat{j}
+\end{align*}
+
+\begin{align*} %resta de vectores de posicion
+	r- r'&= - a\cos{\phi'}\hat{i} - a\sin{\phi'}\hat{j} + z\hat{k}
+\end{align*}
+
+\begin{align*} %modulo de resta de vectores de posicion
+	|r- r'| &=  a^2 + z^2
+\end{align*}
+
+\begin{align*} %diferencial
+	\dd{s'} &= (-a\sin{\phi'}\hat{i} + a\cos{\phi'}\hat{j})\dd{\phi'} 
+\end{align*}
+
+\begin{align*} %producto cruz de ds x (r-r')
+	\dd{s'} \times (r- r') &= a^2\sin^2{\phi'}\hat{k} + a^2\cos^2{\phi'}\hat{k} + az\sin{\phi'}\hat{j} + az\cos{\phi'}\hat{i}
+\end{align*}
+
+entonces la inducción magnética se expresa como:
+
+\begin{align*}
+	\vec{B} &= \frac{\mu_0I'}{4\pi}\int^{2\pi}_{0} \frac{a^2\sin^2{\phi'}\hat{k} + a^2\cos^2{\phi'}\hat{k} + az\sin{\phi'}\hat{j} + az\cos{\phi'}\hat{i}}{(a^2+z^2)^{3/2}}\dd{\phi'}\\
+	\vec{B} &= \frac{\mu_0I'}{4\pi}\int^{2\pi}_{0} \frac{a^2\hat{k} + az\sin{\phi'}\hat{j} + az\cos{\phi'}\hat{i}}{(a^2+z^2)^{3/2}}\dd{\phi'}\\
+	\vec{B} &= \frac{\mu_0I'a^2\hat{k}}{4\pi(a^2+z^2)^{3/2}}
+\end{align*}
 %-------------------------------------------------
 %Forma integral de la Ley de Ampere
 %-------------------------------------------------

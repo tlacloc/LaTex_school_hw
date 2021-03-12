@@ -12,9 +12,9 @@
 \contentsline {subsection}{\numberline {2.4.1}Tarea 1}{8}% 
 \contentsline {subsection}{\numberline {2.4.2}Tarea 2}{8}% 
 \contentsline {chapter}{\numberline {3}Inducci\IeC {\'o}n magn\IeC {\'e}tica}{10}% 
-\contentsline {chapter}{\numberline {4}Forma integral de la Ley de Ampere}{13}% 
-\contentsline {chapter}{\numberline {5}Potencial vectorial}{14}% 
-\contentsline {chapter}{\numberline {6}Desarrollo multipolar del potencial vectorial}{15}% 
-\contentsline {chapter}{\numberline {7}Ley de inducci\IeC {\'o}n de Faraday}{16}% 
-\contentsline {chapter}{\numberline {8}Energ\IeC {\'\i }a magn\IeC {\'e}tica}{17}% 
-\contentsline {chapter}{\numberline {9}Magnetismo en presencia de materia y ecuaciones de Maxwell}{18}% 
+\contentsline {chapter}{\numberline {4}Forma integral de la Ley de Ampere}{15}% 
+\contentsline {chapter}{\numberline {5}Potencial vectorial}{16}% 
+\contentsline {chapter}{\numberline {6}Desarrollo multipolar del potencial vectorial}{17}% 
+\contentsline {chapter}{\numberline {7}Ley de inducci\IeC {\'o}n de Faraday}{18}% 
+\contentsline {chapter}{\numberline {8}Energ\IeC {\'\i }a magn\IeC {\'e}tica}{19}% 
+\contentsline {chapter}{\numberline {9}Magnetismo en presencia de materia y ecuaciones de Maxwell}{20}% 

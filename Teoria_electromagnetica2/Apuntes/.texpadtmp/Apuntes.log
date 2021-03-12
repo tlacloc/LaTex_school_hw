@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 MAR 2021 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 MAR 2021 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -678,6 +678,10 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
+
+
+LaTeX Warning: Label `fig:Tarea2' multiply defined.
+
 )
 \openout1 = `Apuntes.aux'.
 
@@ -909,52 +913,65 @@ File: ./figuras/Ejercicio3.png Graphic file (type png)
 <use ./figuras/Ejercicio3.png>
 Package pdftex.def Info: ./figuras/Ejercicio3.png  used on input line 488.
 (pdftex.def)             Requested size: 150.556pt x 150.556pt.
- [11 <./figuras/Ejercicio3.png>] [12]
+ [11 <./figuras/Ejercicio3.png>]
+<./figuras/induccionMag_ej2.png, id=62, 1003.75pt x 1003.75pt>
+File: ./figuras/induccionMag_ej2.png Graphic file (type png)
+<use ./figuras/induccionMag_ej2.png>
+Package pdftex.def Info: ./figuras/induccionMag_ej2.png  used on input line 547.
+(pdftex.def)             Requested size: 150.556pt x 150.556pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13 <./figuras/induccionMag_ej2.png>] [14]
 Cap\'{\i }tulo 4.
-[13
-
-]
-Cap\'{\i }tulo 5.
-[14
-
-]
-Cap\'{\i }tulo 6.
 [15
 
 ]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 5.
 [16
 
 ]
-Cap\'{\i }tulo 8.
+Cap\'{\i }tulo 6.
 [17
 
 ]
-Cap\'{\i }tulo 9.
+Cap\'{\i }tulo 7.
 [18
+
+]
+Cap\'{\i }tulo 8.
+[19
+
+]
+Cap\'{\i }tulo 9.
+[20
 
 ] (/Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'Apuntes.run.xml'.
 \openout1 = `Apuntes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24185 strings out of 492616
- 460265 string characters out of 6129482
- 846749 words of memory out of 5000000
- 27906 multiletter control sequences out of 15000+600000
+ 24190 strings out of 492616
+ 460424 string characters out of 6129482
+ 846789 words of memory out of 5000000
+ 27910 multiletter control sequences out of 15000+600000
  542721 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,17n,63p,796b,1815s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.pdf (19 pages, 396526 bytes).
+Output written on /Users/desneruda/Documents/GitHub/LaTex_school_hw/Teoria_electromagnetica2/Apuntes/.texpadtmp/Apuntes.pdf (21 pages, 458274 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
